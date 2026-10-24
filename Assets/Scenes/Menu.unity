@@ -277,7 +277,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.17937878, g: 0.2735849, b: 0.18095876, a: 0}
+  m_BackGroundColor: {r: 0.11764707, g: 0.14901961, b: 0.17254902, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -327,7 +327,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0.087155744, y: 0.000000029688922, z: -0.0000000025974443, w: 0.9961947}
-  m_LocalPosition: {x: 0, y: 1.5663977, z: -0.4839443}
+  m_LocalPosition: {x: 0, y: 2.148119, z: -3.7830505}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -674,7 +674,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1979400502
 Transform:
   m_ObjectHideFlags: 0
@@ -895,7 +895,7 @@ Transform:
   m_GameObject: {fileID: 2025197876}
   serializedVersion: 2
   m_LocalRotation: {x: 0.08715574, y: 0.00000002968892, z: -0.0000000025974436, w: 0.9961947}
-  m_LocalPosition: {x: 0, y: 1.5663977, z: -0.4839443}
+  m_LocalPosition: {x: 0, y: 2.148119, z: -3.7830505}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -936,7 +936,7 @@ MonoBehaviour:
     RotationDamping: {x: 1, y: 1, z: 1}
     QuaternionDamping: 1
   OrbitStyle: 0
-  Radius: 2.11
+  Radius: 5.46
   Orbits:
     Top:
       Radius: 2
