@@ -1,0 +1,21 @@
+{
+    "title": "Capitals of Europe",
+    "levels": [
+        {
+            "name": "Level 1",
+            "questions": [
+                { "text": "Capital of France?", "answers": ["Paris", "Lyon", "Nice"], "correct": 0 },
+                { "text": "Capital of Spain?", "answers": ["Barcelona", "Madrid", "Valencia"], "correct": 1 },
+                { "text": "Capital of Italy?", "answers": ["Rome", "Milan", "Turin"], "correct": 0 }
+            ]
+        },
+        {
+            "name": "Level 2",
+            "questions": [
+                { "text": "Capital of Portugal?", "answers": ["Porto", "Lisbon", "Braga"], "correct": 1 },
+                { "text": "Capital of Germany?", "answers": ["Bonn", "Munich", "Berlin"], "correct": 2 },
+                { "text": "Capital of Austria?", "answers": ["Vienna", "Salzburg", "Graz"], "correct": 0 }
+            ]
+        }
+    ]
+}
