@@ -11,15 +11,16 @@ public class QuizView : MonoBehaviour
     [SerializeField] private TMP_Text progressText;
     [SerializeField] private TMP_Text questionText;
 
-    [Tooltip("Objeto con Vertical Layout Group donde se crean los botones de respuesta.")]
     [SerializeField] private Transform answersContainer;
-    [Tooltip("Prefab de un Button con un TMP_Text hijo. Se clona una vez por respuesta.")]
+
     [SerializeField] private Button answerButtonPrefab;
     [SerializeField] private Button nextButton;
     [SerializeField] private Button menuButton;
 
-    [SerializeField] private Color correctColor = new Color(0.3f, 0.8f, 0.4f);
-    [SerializeField] private Color wrongColor = new Color(0.9f, 0.3f, 0.3f);
+    [SerializeField] private QuizCard resultCard;
+
+    [SerializeField] private Color correctColor = Color.green;
+    [SerializeField] private Color wrongColor = Color.red;
 
     [Tooltip("Se lanza al terminar el nivel. Para dar recompensas.")]
     [SerializeField] private UnityEvent onLevelCompleted;
@@ -38,10 +39,15 @@ public class QuizView : MonoBehaviour
         menuButton.onClick.AddListener(QuizLauncher.ReturnToMenu);
         nextButton.gameObject.SetActive(false);
         menuButton.gameObject.SetActive(false);
+        resultCard.gameObject.SetActive(false);
 
         quiz = QuizLauncher.SelectedQuiz;
 
-        if (quiz == null) QuizLauncher.ReturnToMenu();
+        if (quiz == null)
+        {
+            QuizLauncher.ReturnToMenu();
+            return; //La escena cambia al final del frame: sin este return seguiría y daría error
+        }
 
         titleText.text = quiz.title;
 
@@ -52,7 +58,7 @@ public class QuizView : MonoBehaviour
             levelText.text = "";
             progressText.text = "";
             questionText.text = "¡Quiz completado!";
-            menuButton.gameObject.SetActive(true);
+            ShowEndButtons();
             return;
         }
 
@@ -120,6 +126,14 @@ public class QuizView : MonoBehaviour
 
         progressText.text = "";
         questionText.text = level.name + " completado\n" + correctCount + " / " + level.questions.Count + " correctas";
+        ShowEndButtons();
+    }
+
+    //Al final: la tarjeta del quiz (▶▶ = seguir jugando) y el botón de salir al menú
+    private void ShowEndButtons()
+    {
+        resultCard.gameObject.SetActive(true);
+        resultCard.Setup(quiz);
         menuButton.gameObject.SetActive(true);
     }
 
