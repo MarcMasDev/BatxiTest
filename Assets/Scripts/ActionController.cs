@@ -51,11 +51,6 @@ public class ActionController : MonoBehaviour
 
     private string HistoryKey => gameObject.scene.name + "/" + name;
 
-    private void Start()
-    {
-        Play(PickAction());
-    }
-
     private void Update()
     {
         if (nextActionKey != Key.None && Keyboard.current != null && Keyboard.current[nextActionKey].wasPressedThisFrame)
