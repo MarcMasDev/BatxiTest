@@ -22,7 +22,10 @@ public class QuizView : MonoBehaviour
     [SerializeField] private Color correctColor = Color.green;
     [SerializeField] private Color wrongColor = Color.red;
 
-    [Tooltip("Se lanza al terminar el nivel. Para dar recompensas.")]
+    [Header("Recompensas (se dan al terminar el nivel)")]
+    [SerializeField] private ProgressionBalance balance;
+
+    [Tooltip("Se lanza al terminar el nivel.")]
     [SerializeField] private UnityEvent onLevelCompleted;
 
     private QuizData quiz;
@@ -46,7 +49,7 @@ public class QuizView : MonoBehaviour
         if (quiz == null)
         {
             QuizLauncher.ReturnToMenu();
-            return; //La escena cambia al final del frame: sin este return seguiría y daría error
+            return;
         }
 
         titleText.text = quiz.title;
@@ -115,21 +118,25 @@ public class QuizView : MonoBehaviour
         else FinishLevel();
     }
 
-    //4. Fin de la sesión
     private void FinishLevel()
     {
         ClearAnswers();
         nextButton.gameObject.SetActive(false);
 
         QuizProgress.CompleteLevel(quiz, levelIndex);
+
+        //Recompensas
+        int brain = balance.brainPerAnswer.Evaluate(Upgrades.GetLevel(Upgrade.Brain)) * correctCount;
+        int coins = balance.coinsPerLevel + balance.coinsPerAnswer.Evaluate(Upgrades.GetLevel(Upgrade.Coins)) * correctCount;
+        Currencies.Add(Currency.Brain, brain);
+        Currencies.Add(Currency.Coins, coins);
         onLevelCompleted.Invoke();
 
         progressText.text = "";
-        questionText.text = level.name + " completado\n" + correctCount + " / " + level.questions.Count + " correctas";
+        questionText.text = level.name + " completado\n" + correctCount + " / " + level.questions.Count + " correctas\n" + "+" + brain + " inteligencia   +" + coins + " monedas";
         ShowEndButtons();
     }
 
-    //Al final: la tarjeta del quiz (▶▶ = seguir jugando) y el botón de salir al menú
     private void ShowEndButtons()
     {
         resultCard.gameObject.SetActive(true);
