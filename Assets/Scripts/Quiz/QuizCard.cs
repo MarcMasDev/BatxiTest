@@ -11,11 +11,8 @@ public class QuizCard : MonoBehaviour
     [SerializeField] private TextAsset quizFile;
 
     [SerializeField] private TMP_Text titleText;
-    [SerializeField] private Image colorDot;
-    [SerializeField] private Color color = Color.white;
-
-    [SerializeField] private Transform levelsContainer;
-    [SerializeField] private QuizLevelNode levelNodePrefab;
+    [SerializeField] private Slider progressSlider;
+    [SerializeField] private TMP_Text progressText;
 
     [SerializeField] private Button playButton;
     [SerializeField] private GameObject completedMark;
@@ -41,17 +38,9 @@ public class QuizCard : MonoBehaviour
         bool allCompleted = completed >= quiz.levels.Count;
 
         titleText.text = quiz.title;
-        colorDot.color = color;
-
-        foreach (Transform child in levelsContainer) Destroy(child.gameObject);
-        for (int i = 0; i < quiz.levels.Count; i++)
-        {
-            QuizLevelNode node = Instantiate(levelNodePrefab, levelsContainer);
-            bool isCompleted = i < completed;
-            bool nextCompleted = i + 1 < completed;
-            bool isLast = i == quiz.levels.Count - 1;
-            node.Setup(i + 1, isCompleted, nextCompleted, isLast, color);
-        }
+        progressSlider.maxValue = quiz.levels.Count;
+        progressSlider.value = completed;
+        progressText.text = completed + " / " + quiz.levels.Count;
 
         playButton.gameObject.SetActive(!allCompleted);
         if (completedMark != null) completedMark.SetActive(allCompleted);

@@ -1,0 +1,365 @@
+{
+  "title": "PAU Química · Redox y electroquímica",
+  "levels": [
+    {
+      "name": "Conceptos clave",
+      "questions": [
+        {
+          "text": "¿Qué es una oxidación?",
+          "answers": [
+            "Una ganancia de electrones",
+            "Una reacción con oxígeno, siempre",
+            "Una pérdida de electrones (aumenta el número de oxidación)",
+            "Una disminución del número de oxidación"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué es un oxidante?",
+          "answers": [
+            "La especie que se oxida",
+            "La especie que pierde electrones",
+            "La especie que gana electrones y se reduce",
+            "Siempre el oxígeno"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "En una pila, el ánodo...",
+          "answers": [
+            "es donde tiene lugar la oxidación y es el polo positivo",
+            "es el puente salino",
+            "es donde tiene lugar la reducción y es el polo positivo",
+            "es donde tiene lugar la oxidación y es el polo negativo"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "En una electrólisis, el cátodo...",
+          "answers": [
+            "no interviene en la reacción",
+            "es donde tiene lugar la reducción y está conectado al polo negativo del generador",
+            "es donde tiene lugar la oxidación",
+            "está conectado al polo positivo"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Para qué sirve el puente salino de una pila?",
+          "answers": [
+            "Aumenta la fem",
+            "Proporciona los electrones de la reacción",
+            "Cierra el circuito y mantiene la electroneutralidad de las dos disoluciones",
+            "Evita que los electrodos se disuelvan"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué diferencia hay entre una pila y una cuba electrolítica?",
+          "answers": [
+            "La pila no tiene ánodo",
+            "En la electrólisis no hay oxidación",
+            "La pila produce electricidad con una reacción espontánea; la electrólisis usa electricidad para forzar una no espontánea",
+            "Son lo mismo con distinto nombre"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "name": "Números de oxidación y ajuste",
+      "questions": [
+        {
+          "text": "¿Cuál es el número de oxidación del Mn en el KMnO<sub>4</sub>?",
+          "answers": [
+            "+2",
+            "-1",
+            "+7",
+            "+4"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Cuál es el número de oxidación del S en el H<sub>2</sub>SO<sub>4</sub>?",
+          "answers": [
+            "+4",
+            "-2",
+            "+2",
+            "+6"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Cuál es el número de oxidación del Cr en el K<sub>2</sub>Cr<sub>2</sub>O<sub>7</sub>?",
+          "answers": [
+            "+3",
+            "+12",
+            "+6",
+            "+7"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "Fe<sup>2+</sup> + Ce<sup>4+</sup> → Fe<sup>3+</sup> + Ce<sup>3+</sup>. ¿Qué reactivo es el oxidante?",
+          "answers": [
+            "Ce<sup>3+</sup>",
+            "Ce<sup>4+</sup>: se reduce a Ce<sup>3+</sup>",
+            "Fe<sup>2+</sup>: se oxida a Fe<sup>3+</sup>",
+            "Fe<sup>3+</sup>"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Cuál es la semirreacción ajustada del MnO<sub>4</sub><sup>-</sup> en medio ácido?",
+          "answers": [
+            "MnO<sub>4</sub><sup>-</sup> + 5 e<sup>-</sup> → Mn<sup>2+</sup> + 4 O<sup>2-</sup>",
+            "MnO<sub>4</sub><sup>-</sup> + 4 H<sup>+</sup> + 3 e<sup>-</sup> → Mn<sup>2+</sup> + 2 H<sub>2</sub>O",
+            "MnO<sub>4</sub><sup>-</sup> + 8 H<sup>+</sup> → Mn<sup>2+</sup> + 4 H<sub>2</sub>O + 5 e<sup>-</sup>",
+            "MnO<sub>4</sub><sup>-</sup> + 8 H<sup>+</sup> + 5 e<sup>-</sup> → Mn<sup>2+</sup> + 4 H<sub>2</sub>O"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "En medio ácido, MnO<sub>4</sub><sup>-</sup> + Fe<sup>2+</sup> → Mn<sup>2+</sup> + Fe<sup>3+</sup>. ¿Cuántos moles de Fe<sup>2+</sup> reaccionan con 1 mol de MnO<sub>4</sub><sup>-</sup>?",
+          "answers": [
+            "5",
+            "7",
+            "2",
+            "1"
+          ],
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "name": "Pilas",
+      "questions": [
+        {
+          "text": "Pila de Cu y Ag. E°(Cu<sup>2+</sup>/Cu) = +0,34 V; E°(Ag<sup>+</sup>/Ag) = +0,80 V. ¿Qué electrodo es el cátodo?",
+          "answers": [
+            "Cu: es el metal más abundante",
+            "Cu: tiene el potencial más bajo",
+            "Los dos pueden ser cátodo",
+            "Ag: tiene el potencial más alto y en él se reduce el Ag<sup>+</sup>"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "En la pila Cu/Ag, ¿cómo circulan los electrones por el circuito externo?",
+          "answers": [
+            "No circulan electrones",
+            "Por el puente salino",
+            "Del Cu (ánodo) a la Ag (cátodo)",
+            "De la Ag al Cu"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "Notación de la pila Cu/Ag:",
+          "answers": [
+            "Cu<sup>2+</sup>(aq) | Cu(s) || Ag(s) | Ag<sup>+</sup>(aq)",
+            "Ag(s) | Ag<sup>+</sup>(aq) || Cu<sup>2+</sup>(aq) | Cu(s)",
+            "Cu(s) | Cu<sup>2+</sup>(aq) || Ag<sup>+</sup>(aq) | Ag(s)",
+            "Cu(s) | Ag<sup>+</sup>(aq) || Cu<sup>2+</sup>(aq) | Ag(s)"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "En la pila Cu/Ag, ¿qué electrodo gana masa con el tiempo?",
+          "answers": [
+            "Ninguno",
+            "Los dos",
+            "El ánodo de Cu: se deposita cobre",
+            "El cátodo de Ag: se deposita plata"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Qué material hace falta para montar una pila Daniell en el laboratorio?",
+          "answers": [
+            "Una bureta, un Erlenmeyer y un indicador",
+            "Un generador de corriente continua y electrodos de grafito",
+            "Dos vasos con disoluciones de Zn<sup>2+</sup> y Cu<sup>2+</sup>, electrodos de Zn y Cu, puente salino, cables y voltímetro",
+            "Un solo vaso con agua destilada y dos electrodos de cobre"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "name": "Potenciales y espontaneidad",
+      "questions": [
+        {
+          "text": "Fem estándar de la pila Cu/Ag (E°(Cu<sup>2+</sup>/Cu) = +0,34 V; E°(Ag<sup>+</sup>/Ag) = +0,80 V):",
+          "answers": [
+            "-0,46 V",
+            "0,46 V",
+            "1,14 V",
+            "1,26 V"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "Fem estándar de la pila Daniell Zn/Cu (E°(Zn<sup>2+</sup>/Zn) = -0,76 V; E°(Cu<sup>2+</sup>/Cu) = +0,34 V):",
+          "answers": [
+            "1,10 V",
+            "0,26 V",
+            "-1,10 V",
+            "0,42 V"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "Una reacción redox es espontánea cuando...",
+          "answers": [
+            "siempre que haya intercambio de electrones",
+            "el oxidante tiene el potencial más bajo",
+            "la fem es negativa",
+            "la fem es positiva (ΔG° = -nFE° < 0)"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Cuánto vale ΔG° de la pila Daniell (n = 2; E° = 1,10 V; F = 96 485 C mol<sup>-1</sup>)?",
+          "answers": [
+            "-212,3 kJ",
+            "-106,1 kJ",
+            "-212267 kJ",
+            "+212,3 kJ"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Se puede guardar una disolución de CuSO<sub>4</sub> en un recipiente de cinc? E°(Zn<sup>2+</sup>/Zn) = -0,76 V; E°(Cu<sup>2+</sup>/Cu) = +0,34 V",
+          "answers": [
+            "Sí: no hay reacción entre metales y sales",
+            "No: el Cu<sup>2+</sup> se oxidaría",
+            "Sí: el Zn es más resistente",
+            "No: el Zn reduciría el Cu<sup>2+</sup> y el recipiente se oxidaría"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿El HCl disuelve el cobre? E°(H<sup>+</sup>/H<sub>2</sub>) = 0,00 V; E°(Cu<sup>2+</sup>/Cu) = +0,34 V",
+          "answers": [
+            "Sí: el Cu reduce el H<sup>+</sup> a H<sub>2</sub>",
+            "Sí: todos los ácidos disuelven los metales",
+            "Solo si se calienta",
+            "No: el H<sup>+</sup> no es capaz de oxidar el Cu"
+          ],
+          "correct": 3
+        }
+      ]
+    },
+    {
+      "name": "Electrólisis y leyes de Faraday",
+      "questions": [
+        {
+          "text": "En la electrólisis del agua acidulada con H<sub>2</sub>SO<sub>4</sub>, ¿qué se obtiene en el cátodo?",
+          "answers": [
+            "S",
+            "O<sub>2</sub>",
+            "SO<sub>2</sub>",
+            "H<sub>2</sub>"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "Se croma una pieza (Cr<sup>3+</sup> + 3 e<sup>-</sup> → Cr) con 5,0 A durante 1 hora. ¿Qué masa de Cr se deposita? (M = 52,0; F = 96 485 C mol<sup>-1</sup>)",
+          "answers": [
+            "4,85 g",
+            "0,054 g",
+            "3,23 g",
+            "9,70 g"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué masa de Cu se deposita con 2,0 A durante 30 min (Cu<sup>2+</sup> + 2 e<sup>-</sup> → Cu; M = 63,5)?",
+          "answers": [
+            "2,37 g",
+            "3,29 × 10<sup>-4</sup> g",
+            "1,18 g",
+            "0,020 g"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Cuánto tiempo hace falta para depositar 10 g de Ag (M = 107,9) con una corriente de 3,0 A?",
+          "answers": [
+            "≈ 149 min",
+            "≈ 50 min",
+            "≈ 0,8 min",
+            "≈ 25 min"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué volumen de H<sub>2</sub> (en condiciones normales, 22,4 L mol<sup>-1</sup>) se obtiene con 2,0 A durante 1 hora?",
+          "answers": [
+            "0,42 L",
+            "0,84 L",
+            "83,6 L",
+            "1,67 L"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "name": "Corrosión y aplicaciones",
+      "questions": [
+        {
+          "text": "¿Qué es un ánodo de sacrificio?",
+          "answers": [
+            "Un metal noble que nunca se oxida",
+            "Un metal más reductor (E° más negativo) que se oxida en lugar del metal que se quiere proteger",
+            "El electrodo donde se deposita el metal en una electrólisis",
+            "Una capa de pintura"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué metal sirve de ánodo de sacrificio para proteger el hierro (E°(Fe<sup>2+</sup>/Fe) = -0,44 V)?",
+          "answers": [
+            "Ag (E° = +0,80 V)",
+            "Mg (E° = -2,37 V)",
+            "Au (E° = +1,50 V)",
+            "Cu (E° = +0,34 V)"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué es galvanizar el hierro?",
+          "answers": [
+            "Pintarlo de rojo",
+            "Recubrirlo de cobre",
+            "Calentarlo hasta fundirlo",
+            "Recubrirlo con una capa de cinc"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Por qué el hierro se oxida más deprisa cerca del mar?",
+          "answers": [
+            "El mar tiene menos oxígeno",
+            "La sal reduce el hierro",
+            "El agua salada está más fría",
+            "El agua salada es un electrolito que facilita el paso de iones"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "En el cátodo de una biopila (pila microbiana) se reduce el oxígeno. ¿Cuál es la semirreacción?",
+          "answers": [
+            "O<sub>2</sub> + 4 H<sup>+</sup> + 4 e<sup>-</sup> → 2 H<sub>2</sub>O",
+            "O<sub>2</sub> + 2 e<sup>-</sup> → O<sup>2-</sup>",
+            "2 H<sub>2</sub>O → O<sub>2</sub> + 4 H<sup>+</sup> + 4 e<sup>-</sup>",
+            "H<sub>2</sub> → 2 H<sup>+</sup> + 2 e<sup>-</sup>"
+          ],
+          "correct": 0
+        }
+      ]
+    }
+  ]
+}

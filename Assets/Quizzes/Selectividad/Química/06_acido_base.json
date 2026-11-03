@@ -1,0 +1,595 @@
+{
+  "title": "PAU Química · Ácidos y bases",
+  "levels": [
+    {
+      "name": "Teorías ácido-base",
+      "questions": [
+        {
+          "text": "Según Brønsted-Lowry, un ácido es una especie que...",
+          "answers": [
+            "cede electrones",
+            "libera OH<sup>-</sup> en agua",
+            "acepta protones (H<sup>+</sup>)",
+            "cede protones (H<sup>+</sup>)"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "Según Arrhenius, una base es una sustancia que...",
+          "answers": [
+            "cede protones",
+            "en agua libera iones OH<sup>-</sup>",
+            "en agua libera H<sup>+</sup>",
+            "acepta electrones"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Cuál es la base conjugada del ácido acético (CH<sub>3</sub>COOH)?",
+          "answers": [
+            "CH<sub>3</sub>COOH<sub>2</sub><sup>+</sup>",
+            "H<sub>3</sub>O<sup>+</sup>",
+            "CH<sub>3</sub>COO<sup>-</sup>",
+            "OH<sup>-</sup>"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Cuál es el ácido conjugado del NH<sub>3</sub>?",
+          "answers": [
+            "H<sub>3</sub>O<sup>+</sup>",
+            "NH<sub>4</sub><sup>+</sup>",
+            "N<sub>2</sub>",
+            "NH<sub>2</sub><sup>-</sup>"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "En HCl + H<sub>2</sub>O → Cl<sup>-</sup> + H<sub>3</sub>O<sup>+</sup>, el agua actúa como...",
+          "answers": [
+            "catalizador",
+            "ácido: cede un protón",
+            "base: acepta un protón",
+            "oxidante"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Cuál de estas especies es anfótera (puede actuar como ácido o como base)?",
+          "answers": [
+            "Na<sup>+</sup>",
+            "Cl<sup>-</sup>",
+            "NH<sub>4</sub><sup>+</sup>",
+            "HCO<sub>3</sub><sup>-</sup>"
+          ],
+          "correct": 3
+        }
+      ]
+    },
+    {
+      "name": "pH y producto iónico del agua",
+      "questions": [
+        {
+          "text": "¿Cuánto vale el producto iónico del agua (K<sub>w</sub>) a 25 °C?",
+          "answers": [
+            "1,0 × 10<sup>-7</sup>",
+            "1,0 × 10<sup>-14</sup>",
+            "14",
+            "1,0 × 10<sup>7</sup>"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "A 25 °C, una disolución de pH = 3 tiene [OH<sup>-</sup>] igual a...",
+          "answers": [
+            "1,0 × 10<sup>3</sup> mol L<sup>-1</sup>",
+            "1,0 × 10<sup>-11</sup> mol L<sup>-1</sup>",
+            "11 mol L<sup>-1</sup>",
+            "1,0 × 10<sup>-3</sup> mol L<sup>-1</sup>"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué pH tiene una disolución de HCl 0,010 mol L<sup>-1</sup>?",
+          "answers": [
+            "2,00",
+            "1,00",
+            "0,01",
+            "12,00"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué pH tiene una disolución de NaOH 0,010 mol L<sup>-1</sup>?",
+          "answers": [
+            "0,01",
+            "12,00",
+            "10,00",
+            "2,00"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "Si [H<sub>3</sub>O<sup>+</sup>] = 2,5 × 10<sup>-4</sup> mol L<sup>-1</sup>, ¿cuánto vale el pH?",
+          "answers": [
+            "4,60",
+            "10,40",
+            "4,00",
+            "3,60"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "Si diluimos 10 veces una disolución de HCl de pH = 2, el pH pasa a...",
+          "answers": [
+            "20",
+            "3",
+            "2 (no cambia)",
+            "1"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "name": "Ácidos y bases débiles",
+      "questions": [
+        {
+          "text": "¿Qué diferencia hay entre un ácido fuerte y uno débil?",
+          "answers": [
+            "El débil solo se disocia parcialmente en agua (K<sub>a</sub> pequeña)",
+            "El débil no reacciona con las bases",
+            "El débil está más diluido",
+            "El fuerte siempre tiene pH = 0"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "Cuanto mayor es la K<sub>a</sub> de un ácido...",
+          "answers": [
+            "más fuerte es el ácido y más débil su base conjugada",
+            "más fuerte es su base conjugada",
+            "más débil es el ácido",
+            "mayor es su pH"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "K<sub>a</sub> del ácido acético = 1,8 × 10<sup>-5</sup>. ¿Cuánto vale la K<sub>b</sub> del ion acetato?",
+          "answers": [
+            "1,80 × 10<sup>-19</sup>",
+            "1,80 × 10<sup>-5</sup>",
+            "5,56 × 10<sup>4</sup>",
+            "5,56 × 10<sup>-10</sup>"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Qué pH tiene una disolución 0,20 mol L<sup>-1</sup> de ácido metanoico (K<sub>a</sub> = 1,8 × 10<sup>-4</sup>)?",
+          "answers": [
+            "0,70",
+            "2,23",
+            "3,74",
+            "4,44"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "Una disolución 0,30 mol L<sup>-1</sup> de ácido hipocloroso tiene pH = 4,02. ¿Cuánto vale K<sub>a</sub>?",
+          "answers": [
+            "9,55 × 10<sup>-5</sup>",
+            "3,18 × 10<sup>-4</sup>",
+            "3,04 × 10<sup>-8</sup>",
+            "9,12 × 10<sup>-9</sup>"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué pH tiene una disolución 0,10 mol L<sup>-1</sup> de NH<sub>3</sub> (K<sub>b</sub> = 1,8 × 10<sup>-5</sup>)?",
+          "answers": [
+            "9,26",
+            "13,00",
+            "11,12",
+            "2,88"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "name": "Grado de disociación",
+      "questions": [
+        {
+          "text": "El grado de disociación de un ácido fuerte es aproximadamente...",
+          "answers": [
+            "0 %",
+            "50 %",
+            "Depende de K<sub>a</sub>",
+            "100 %"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "Al diluir un ácido débil, su grado de disociación...",
+          "answers": [
+            "aumenta",
+            "se hace cero",
+            "disminuye",
+            "no cambia"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué grado de disociación tiene el ácido acético 0,10 mol L<sup>-1</sup> (K<sub>a</sub> = 1,8 × 10<sup>-5</sup>)?",
+          "answers": [
+            "0,133 %",
+            "13,3 %",
+            "0,018 %",
+            "1,33 %"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "Un ácido HA 0,050 mol L<sup>-1</sup> está disociado un 2,0 %. ¿Cuánto vale K<sub>a</sub>?",
+          "answers": [
+            "4,00 × 10<sup>-4</sup>",
+            "2,00 × 10<sup>-3</sup>",
+            "2,04 × 10<sup>-5</sup>",
+            "1,00 × 10<sup>-3</sup>"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "Un ácido 0,10 mol L<sup>-1</sup> está disociado un 5,0 %. ¿Qué pH tiene?",
+          "answers": [
+            "1,30",
+            "1,00",
+            "2,30",
+            "3,30"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "name": "Hidrólisis de sales",
+      "questions": [
+        {
+          "text": "Cuando el acetato de sodio (CH<sub>3</sub>COONa) se disuelve en agua, la disolución es...",
+          "answers": [
+            "neutra: es una sal",
+            "ácida: libera H<sup>+</sup>",
+            "ácida: Na<sup>+</sup> + H<sub>2</sub>O ↔ NaOH + H<sup>+</sup>",
+            "básica: CH<sub>3</sub>COO<sup>-</sup> + H<sub>2</sub>O ↔ CH<sub>3</sub>COOH + OH<sup>-</sup>"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "Una disolución de NH<sub>4</sub>Cl es...",
+          "answers": [
+            "básica: el Cl<sup>-</sup> capta H<sup>+</sup>",
+            "básica: contiene NH<sub>3</sub>",
+            "neutra: es una sal",
+            "ácida: NH<sub>4</sub><sup>+</sup> + H<sub>2</sub>O ↔ NH<sub>3</sub> + H<sub>3</sub>O<sup>+</sup>"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "Una disolución de NaCl es...",
+          "answers": [
+            "ácida",
+            "básica",
+            "neutra: ni el Na<sup>+</sup> ni el Cl<sup>-</sup> se hidrolizan",
+            "depende de la concentración"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "Una disolución de Na<sub>2</sub>CO<sub>3</sub> es...",
+          "answers": [
+            "básica: el CO<sub>3</sub><sup>2-</sup> se hidroliza y genera OH<sup>-</sup>",
+            "ácida: el Na<sup>+</sup> se hidroliza",
+            "ácida",
+            "neutra"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "El nitrato de amonio (NH<sub>4</sub>NO<sub>3</sub>), un fertilizante, al disolverse en el suelo...",
+          "answers": [
+            "lo basifica: el NO<sub>3</sub><sup>-</sup> se hidroliza",
+            "no cambia el pH",
+            "lo acidifica: el NH<sub>4</sub><sup>+</sup> se hidroliza",
+            "lo basifica: libera NH<sub>3</sub> gas"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué pH tiene una disolución de acetato de sodio 0,10 mol L<sup>-1</sup>? (K<sub>a</sub> del ácido acético = 1,8 × 10<sup>-5</sup>)",
+          "answers": [
+            "8,87",
+            "13,00",
+            "5,13",
+            "7,00"
+          ],
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "name": "Valoraciones: punto de equivalencia",
+      "questions": [
+        {
+          "text": "En el punto de equivalencia de una valoración...",
+          "answers": [
+            "los moles de ácido y de base añadidos están en proporción estequiométrica",
+            "el pH es siempre 7",
+            "el indicador siempre cambia a rojo",
+            "se ha gastado la mitad de la base"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "Se valora un ácido débil (salicílico, acético...) con NaOH. ¿Cómo es el pH en el punto de equivalencia?",
+          "answers": [
+            "Básico: el anión del ácido débil se hidroliza y genera OH<sup>-</sup>",
+            "Ácido: queda ácido sin reaccionar",
+            "Básico: sobra NaOH",
+            "Neutro: se han neutralizado todos los H<sup>+</sup>"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Cómo es el pH en el punto de equivalencia de la valoración de HCl con NaOH?",
+          "answers": [
+            "Depende de las concentraciones",
+            "Básico",
+            "Ácido",
+            "Neutro (pH = 7): ningún ion se hidroliza"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Cómo es el pH en el punto de equivalencia de la valoración de NH<sub>3</sub> con HCl?",
+          "answers": [
+            "Ácido: el NH<sub>4</sub><sup>+</sup> se hidroliza y genera H<sub>3</sub>O<sup>+</sup>",
+            "Neutro",
+            "Básico: el NH<sub>3</sub> es una base",
+            "Básico: el Cl<sup>-</sup> se hidroliza"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "Para valorar 25,0 mL de ácido acético se gastan 18,5 mL de NaOH 0,100 mol L<sup>-1</sup>. ¿Cuál es la concentración del ácido?",
+          "answers": [
+            "0,0185 mol L<sup>-1</sup>",
+            "0,074 mol L<sup>-1</sup>",
+            "0,135 mol L<sup>-1</sup>",
+            "7,4 × 10<sup>-4</sup> mol L<sup>-1</sup>"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "name": "Curvas de valoración e indicadores",
+      "questions": [
+        {
+          "text": "¿Qué indicador es adecuado para una valoración?",
+          "answers": [
+            "Siempre la fenolftaleína",
+            "Cualquiera: todos cambian de color en el punto de equivalencia",
+            "El que cambia de color a pH = 7",
+            "El que tiene un intervalo de viraje que incluye el pH del punto de equivalencia"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "Para valorar ácido acético con NaOH, ¿qué indicador elegirías?",
+          "answers": [
+            "Fenolftaleína (viraje 8,2-10)",
+            "Naranja de metilo (viraje 3,1-4,4)",
+            "Ninguno: no hace falta",
+            "Rojo de metilo (viraje 4,4-6,2)"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "Para valorar NH<sub>3</sub> con HCl, ¿qué indicador elegirías?",
+          "answers": [
+            "Rojo de metilo (viraje 4,4-6,2)",
+            "Timolftaleína (viraje 9,3-10,5)",
+            "Fenolftaleína (viraje 8,2-10)",
+            "Ninguno: no hace falta"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "Una curva de valoración empieza en pH ≈ 1 y tiene el salto brusco centrado en pH = 7. ¿Qué se valora?",
+          "answers": [
+            "Un ácido débil con una base débil",
+            "Un ácido débil con una base fuerte",
+            "Una base débil con un ácido fuerte",
+            "Un ácido fuerte con una base fuerte"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "En la valoración de un ácido débil con NaOH, en el punto de semiequivalencia...",
+          "answers": [
+            "pH = 14",
+            "pH = pK<sub>w</sub>",
+            "pH = pK<sub>a</sub>",
+            "pH = 7"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "name": "Disoluciones reguladoras",
+      "questions": [
+        {
+          "text": "¿Qué es una disolución reguladora (tampón)?",
+          "answers": [
+            "Una disolución con pH = 7 exactamente",
+            "Una mezcla de un ácido fuerte y una base fuerte",
+            "Una mezcla de un ácido débil y su base conjugada que mantiene el pH casi constante",
+            "Una disolución de un ácido fuerte muy diluido"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Cuál de estas mezclas forma una disolución reguladora?",
+          "answers": [
+            "HCl y NaOH",
+            "NaOH y NaCl",
+            "CH<sub>3</sub>COOH y CH<sub>3</sub>COONa",
+            "HCl y NaCl"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "Un tampón tiene [CH<sub>3</sub>COOH] = [CH<sub>3</sub>COO<sup>-</sup>] (K<sub>a</sub> = 1,8 × 10<sup>-5</sup>). ¿Qué pH tiene?",
+          "answers": [
+            "4,74",
+            "7,00",
+            "9,26",
+            "1,80"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Por qué un tampón resiste la adición de un poco de ácido?",
+          "answers": [
+            "El ácido débil reacciona con el H<sup>+</sup>",
+            "La base conjugada reacciona con el H<sup>+</sup> añadido",
+            "El agua neutraliza el ácido",
+            "Porque tiene pH 7"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué sistema regula el pH de la sangre?",
+          "answers": [
+            "H<sub>2</sub>CO<sub>3</sub> / HCO<sub>3</sub><sup>-</sup>",
+            "H<sub>2</sub>SO<sub>4</sub> / SO<sub>4</sub><sup>2-</sup>",
+            "NaOH / Na<sup>+</sup>",
+            "HCl / Cl<sup>-</sup>"
+          ],
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "name": "Laboratorio y seguridad",
+      "questions": [
+        {
+          "text": "¿Qué material hace falta para una valoración ácido-base?",
+          "answers": [
+            "Bureta, pipeta aforada, matraz Erlenmeyer e indicador",
+            "Probeta, embudo y papel de filtro",
+            "Matraz aforado, refrigerante y balón",
+            "Vaso de precipitados, termómetro y mechero Bunsen"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué instrumento usarías para medir exactamente 10,00 mL de una disolución?",
+          "answers": [
+            "Matraz Erlenmeyer",
+            "Vaso de precipitados",
+            "Probeta",
+            "Pipeta aforada"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Cómo se diluye correctamente un ácido concentrado como el H<sub>2</sub>SO<sub>4</sub>?",
+          "answers": [
+            "Mezclándolos en una probeta cerrada",
+            "Añadiendo el agua sobre el ácido, de golpe",
+            "Añadiendo el ácido sobre el agua, poco a poco",
+            "Calentando el ácido antes"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué indica el pictograma de corrosión (líquido que cae sobre una mano y una superficie)?",
+          "answers": [
+            "Es inflamable",
+            "Puede provocar quemaduras graves en la piel y dañar metales",
+            "Es un gas a presión",
+            "Es tóxico para el medio acuático"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué indica el pictograma de la llama?",
+          "answers": [
+            "Sustancia explosiva",
+            "Sustancia corrosiva",
+            "Sustancia comburente",
+            "Sustancia inflamable"
+          ],
+          "correct": 3
+        }
+      ]
+    },
+    {
+      "name": "Problemas tipo PAU",
+      "questions": [
+        {
+          "text": "Una crema tiene 0,1 g de ácido salicílico (M = 138,12; K<sub>a</sub> = 1,07 × 10<sup>-3</sup>) por cada 100 mL. Para exfoliar debe tener pH 3-4. ¿Es óptima?",
+          "answers": [
+            "No: pH ≈ 2,1, como un ácido fuerte",
+            "Sí: pH ≈ 2,6, dentro del intervalo",
+            "Sí: pH ≈ 3,6",
+            "No: pH ≈ 2,6, es demasiado ácida"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "Un zumo de naranja de 250 mL debe tener pH ≤ 4,0. Si toda la acidez viene del ácido cítrico (K<sub>a</sub> = 8,4 × 10<sup>-4</sup>; M = 192,12), ¿qué masa mínima debe tener?",
+          "answers": [
+            "2,15 × 10<sup>-2</sup> g",
+            "0,0384 g",
+            "5,37 × 10<sup>-3</sup> g",
+            "5,72 × 10<sup>-4</sup> g"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué volumen de NaOH 0,20 mol L<sup>-1</sup> neutraliza 20 mL de HCl 0,10 mol L<sup>-1</sup>?",
+          "answers": [
+            "10 mL",
+            "40 mL",
+            "5 mL",
+            "20 mL"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué volumen de NaOH 0,10 mol L<sup>-1</sup> neutraliza 25 mL de H<sub>2</sub>SO<sub>4</sub> 0,050 mol L<sup>-1</sup>?",
+          "answers": [
+            "12,5 mL",
+            "50 mL",
+            "25 mL",
+            "6,25 mL"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "Se mezclan 50 mL de HCl 0,10 mol L<sup>-1</sup> con 25 mL de NaOH 0,10 mol L<sup>-1</sup>. ¿Qué pH tiene la mezcla?",
+          "answers": [
+            "1,48",
+            "2,60",
+            "1,00",
+            "7,00"
+          ],
+          "correct": 0
+        }
+      ]
+    }
+  ]
+}

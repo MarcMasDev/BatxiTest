@@ -1,0 +1,200 @@
+{
+  "title": "PAU Química · Cinética química",
+  "levels": [
+    {
+      "name": "Conceptos clave",
+      "questions": [
+        {
+          "text": "¿Qué es la velocidad de una reacción?",
+          "answers": [
+            "La cantidad de calor que se desprende por segundo",
+            "El valor de la constante de equilibrio",
+            "El tiempo que tarda la reacción en terminar",
+            "La variación de la concentración de un reactivo o de un producto por unidad de tiempo"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Qué es la energía de activación?",
+          "answers": [
+            "La energía para romper todos los enlaces de los reactivos",
+            "La diferencia de entalpía entre productos y reactivos",
+            "La energía que se desprende en la reacción",
+            "La energía mínima que deben tener las moléculas para que un choque sea eficaz"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Cómo actúa un catalizador?",
+          "answers": [
+            "Aumenta la energía cinética de las moléculas",
+            "Hace que la reacción sea más exotérmica",
+            "Proporciona un mecanismo alternativo con menor energía de activación y se recupera al final",
+            "Desplaza el equilibrio hacia los productos"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "Según la teoría de colisiones, ¿por qué aumenta la velocidad con la temperatura?",
+          "answers": [
+            "Aumenta la constante de equilibrio",
+            "Las moléculas se hacen más pequeñas",
+            "Aumenta la fracción de moléculas con energía suficiente (≥ E<sub>a</sub>) y la frecuencia de los choques",
+            "Disminuye la energía de activación"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué es el complejo activado (estado de transición)?",
+          "answers": [
+            "El catalizador una vez ha reaccionado",
+            "Un intermedio estable que se puede aislar",
+            "El producto final de la reacción",
+            "Una especie inestable que corresponde al máximo de energía en la coordenada de reacción"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Qué es el orden de reacción respecto a un reactivo?",
+          "answers": [
+            "El número de etapas de la reacción",
+            "Su coeficiente estequiométrico, siempre",
+            "El número de moléculas que chocan",
+            "El exponente de su concentración en la ecuación de velocidad; se determina experimentalmente"
+          ],
+          "correct": 3
+        }
+      ]
+    },
+    {
+      "name": "Razónalo",
+      "questions": [
+        {
+          "text": "Al duplicar [H<sub>2</sub>O<sub>2</sub>], la velocidad inicial se duplica. ¿Cuál es el orden respecto a H<sub>2</sub>O<sub>2</sub>?",
+          "answers": [
+            "1/2",
+            "1",
+            "0",
+            "2"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "Al duplicar [A], la velocidad inicial se cuadruplica. ¿Cuál es el orden respecto a A?",
+          "answers": [
+            "4",
+            "2",
+            "1",
+            "0"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "Al duplicar [B], la velocidad no cambia. ¿Cuál es el orden respecto a B?",
+          "answers": [
+            "1",
+            "2",
+            "0",
+            "No se puede saber"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "En una reacción exotérmica, ¿cómo es la energía de activación directa respecto a la inversa?",
+          "answers": [
+            "Igual",
+            "Más grande",
+            "Depende del catalizador",
+            "Más pequeña"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Qué hace un catalizador con las energías de activación directa e inversa?",
+          "answers": [
+            "No las modifica, solo aumenta la temperatura",
+            "Disminuye la directa y aumenta la inversa",
+            "Solo disminuye la directa",
+            "Las disminuye las dos en la misma cantidad"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Por qué un sólido en polvo reacciona más deprisa que el mismo sólido en un solo trozo?",
+          "answers": [
+            "El polvo está más concentrado",
+            "Tiene más superficie de contacto y hay más choques eficaces",
+            "El polvo tiene una energía de activación mayor",
+            "El polvo hace la reacción más exotérmica"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "name": "Cálculos tipo PAU",
+      "questions": [
+        {
+          "text": "¿Qué unidades tiene la constante de velocidad de una reacción de orden global 2?",
+          "answers": [
+            "L<sup>2</sup> mol<sup>-2</sup> s<sup>-1</sup>",
+            "mol L<sup>-1</sup> s<sup>-1</sup>",
+            "s<sup>-1</sup>",
+            "L mol<sup>-1</sup> s<sup>-1</sup>"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "v = k[H<sub>2</sub>O<sub>2</sub>]. Si con [H<sub>2</sub>O<sub>2</sub>] = 0,20 mol L<sup>-1</sup> la velocidad inicial es 1,2 × 10<sup>-3</sup> mol L<sup>-1</sup> s<sup>-1</sup>, ¿cuánto vale k?",
+          "answers": [
+            "3,0 × 10<sup>-2</sup> s<sup>-1</sup>",
+            "6,0 × 10<sup>-3</sup> s<sup>-1</sup>",
+            "6,0 × 10<sup>-3</sup> L mol<sup>-1</sup> s<sup>-1</sup>",
+            "2,4 × 10<sup>-4</sup> s<sup>-1</sup>"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "Exp. 1: [A] = 0,1; [B] = 0,1; v = 2 × 10<sup>-3</sup>. Exp. 2: [A] = 0,2; [B] = 0,1; v = 8 × 10<sup>-3</sup>. Exp. 3: [A] = 0,1; [B] = 0,2; v = 4 × 10<sup>-3</sup>. ¿Cuál es la ecuación de velocidad?",
+          "answers": [
+            "v = k[A][B]<sup>2</sup>",
+            "v = k[A]<sup>2</sup>[B]<sup>2</sup>",
+            "v = k[A][B]",
+            "v = k[A]<sup>2</sup>[B]"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "Con los datos anteriores (v = k[A]<sup>2</sup>[B]; exp. 1: [A] = [B] = 0,1 mol L<sup>-1</sup>; v = 2 × 10<sup>-3</sup> mol L<sup>-1</sup> s<sup>-1</sup>), ¿cuánto vale k?",
+          "answers": [
+            "2,0 L mol<sup>-1</sup> s<sup>-1</sup>",
+            "2,0 L<sup>2</sup> mol<sup>-2</sup> s<sup>-1</sup>",
+            "20 L<sup>2</sup> mol<sup>-2</sup> s<sup>-1</sup>",
+            "0,2 L<sup>2</sup> mol<sup>-2</sup> s<sup>-1</sup>"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "Una reacción tiene E<sub>a</sub>(directa) = 120 kJ y ΔH = -40 kJ. ¿Cuánto vale E<sub>a</sub>(inversa)?",
+          "answers": [
+            "120 kJ",
+            "80 kJ",
+            "160 kJ",
+            "40 kJ"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "v = k[A]<sup>2</sup>[B]. Si se triplica [A] y [B] se reduce a la mitad, la velocidad...",
+          "answers": [
+            "se multiplica por 9",
+            "se multiplica por 6",
+            "se multiplica por 4,5",
+            "se multiplica por 1,5"
+          ],
+          "correct": 2
+        }
+      ]
+    }
+  ]
+}

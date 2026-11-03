@@ -1,0 +1,420 @@
+{
+  "title": "PAU Química · Termoquímica y espontaneidad",
+  "levels": [
+    {
+      "name": "Conceptos clave",
+      "questions": [
+        {
+          "text": "Una reacción con ΔH < 0...",
+          "answers": [
+            "es endotérmica: absorbe calor",
+            "es siempre espontánea",
+            "tiene una energía de activación negativa",
+            "es exotérmica: el sistema cede calor a presión constante"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Qué es una función de estado?",
+          "answers": [
+            "Una ecuación química ajustada",
+            "Una magnitud que siempre vale cero en el equilibrio",
+            "Una magnitud que solo depende de los estados inicial y final, como H, S o G",
+            "Una magnitud que depende del camino seguido, como el calor"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué es la entalpía estándar de formación de un compuesto?",
+          "answers": [
+            "La variación de entalpía al formar 1 mol del compuesto a partir de sus elementos en estado estándar",
+            "El calor para formar 1 g del compuesto",
+            "La energía para descomponer 1 mol del compuesto en átomos gaseosos",
+            "La variación de entalpía al formar el compuesto a partir de cualquier reactivo"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Cuánto vale la entalpía estándar de formación del O<sub>2</sub>(g)?",
+          "answers": [
+            "-498 kJ mol<sup>-1</sup>, la energía del enlace O=O",
+            "+249 kJ mol<sup>-1</sup>",
+            "0 kJ mol<sup>-1</sup>, porque es un elemento en su estado estándar",
+            "Depende de la reacción"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué es la entalpía estándar de combustión?",
+          "answers": [
+            "La ΔH de formación del CO<sub>2</sub>",
+            "La temperatura a la que arde una sustancia",
+            "La ΔH cuando 1 mol de sustancia reacciona con O<sub>2</sub> y da CO<sub>2</sub> y H<sub>2</sub>O",
+            "La energía para encender una sustancia"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Cuál es la reacción de formación estándar del etanol?",
+          "answers": [
+            "C<sub>2</sub>H<sub>5</sub>OH(l) + 3 O<sub>2</sub>(g) → 2 CO<sub>2</sub>(g) + 3 H<sub>2</sub>O(l)",
+            "2 C(g) + 6 H(g) + O(g) → C<sub>2</sub>H<sub>5</sub>OH(l)",
+            "C<sub>2</sub>H<sub>4</sub>(g) + H<sub>2</sub>O(l) → C<sub>2</sub>H<sub>5</sub>OH(l)",
+            "2 C(s) + 3 H<sub>2</sub>(g) + ½ O<sub>2</sub>(g) → C<sub>2</sub>H<sub>5</sub>OH(l)"
+          ],
+          "correct": 3
+        }
+      ]
+    },
+    {
+      "name": "Entalpías de formación",
+      "questions": [
+        {
+          "text": "C<sub>2</sub>H<sub>2</sub>(g) + HCl(g) → CH<sub>2</sub>=CHCl(g). ΔH<sub>f</sub>° (kJ mol<sup>-1</sup>): C<sub>2</sub>H<sub>2</sub> = +226,9; HCl = -92,3; CH<sub>2</sub>=CHCl = +37,26. ¿Cuánto vale ΔH°?",
+          "answers": [
+            "+97,3 kJ",
+            "-97,3 kJ",
+            "-281,9 kJ",
+            "+171,9 kJ"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "Combustión del metano: CH<sub>4</sub> + 2 O<sub>2</sub> → CO<sub>2</sub> + 2 H<sub>2</sub>O(l). ΔH<sub>f</sub>° (kJ mol<sup>-1</sup>): CH<sub>4</sub> = -74,8; CO<sub>2</sub> = -393,5; H<sub>2</sub>O(l) = -285,8. ¿Cuánto vale ΔH°?",
+          "answers": [
+            "-1039,9 kJ",
+            "+890,3 kJ",
+            "-604,5 kJ",
+            "-890,3 kJ"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Cuánta energía se desprende al quemar 32 g de metano (M = 16 g mol<sup>-1</sup>; ΔH<sub>c</sub> = -890,3 kJ mol<sup>-1</sup>)?",
+          "answers": [
+            "890,3 kJ",
+            "1780,6 kJ",
+            "445,2 kJ",
+            "28490 kJ"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "Sacarosa + H<sub>2</sub>O → glucosa + fructosa. ΔH<sub>f</sub>° (kJ mol<sup>-1</sup>): sacarosa -2 226,0; agua -285,8; glucosa -1 273,3; fructosa -1 265,6. ¿Qué calor interviene al hidrolizar 8,5 g de sacarosa (M = 342 g mol<sup>-1</sup>)?",
+          "answers": [
+            "Se absorben 0,67 kJ",
+            "Se desprenden 0,67 kJ",
+            "Se desprenden 27,1 kJ",
+            "Se desprenden 230 kJ"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "Con ΔH<sub>f</sub>°, la entalpía de reacción se calcula como...",
+          "answers": [
+            "Σ ΔH<sub>f</sub>°(reactivos) - Σ ΔH<sub>f</sub>°(productos)",
+            "Σ ΔH<sub>f</sub>° de todas las sustancias",
+            "Σ ΔH<sub>f</sub>°(productos) - Σ ΔH<sub>f</sub>°(reactivos), multiplicando por los coeficientes",
+            "Σ ΔH<sub>f</sub>°(productos), sin coeficientes"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "name": "Ley de Hess",
+      "questions": [
+        {
+          "text": "¿Qué dice la ley de Hess?",
+          "answers": [
+            "La entalpía de reacción solo depende de los estados inicial y final, no del camino seguido",
+            "La entropía del universo siempre aumenta",
+            "El calor a presión y a volumen constante son siempre iguales",
+            "La entalpía de reacción es siempre negativa"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "Si una ecuación termoquímica se invierte, su ΔH...",
+          "answers": [
+            "se hace cero",
+            "se divide por dos",
+            "no cambia",
+            "cambia de signo"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "Datos: C(s) + O<sub>2</sub> → CO<sub>2</sub>, ΔH = -393,5 kJ; CO + ½ O<sub>2</sub> → CO<sub>2</sub>, ΔH = -283,0 kJ. ¿Cuánto vale ΔH de C(s) + ½ O<sub>2</sub> → CO?",
+          "answers": [
+            "-283,0 kJ",
+            "+110,5 kJ",
+            "-110,5 kJ",
+            "-676,5 kJ"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "Datos: N<sub>2</sub> + 2 O<sub>2</sub> → 2 NO<sub>2</sub>, ΔH = +66,4 kJ; 2 NO + O<sub>2</sub> → 2 NO<sub>2</sub>, ΔH = -114,1 kJ. ¿Cuánto vale ΔH de N<sub>2</sub> + O<sub>2</sub> → 2 NO?",
+          "answers": [
+            "-180,5 kJ",
+            "-47,7 kJ",
+            "+90,25 kJ",
+            "+180,5 kJ"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "Datos: S + O<sub>2</sub> → SO<sub>2</sub>, ΔH = -296,8 kJ; 2 SO<sub>2</sub> + O<sub>2</sub> → 2 SO<sub>3</sub>, ΔH = -197,8 kJ. ¿Cuánto vale ΔH de S + 3/2 O<sub>2</sub> → SO<sub>3</sub>?",
+          "answers": [
+            "-197,9 kJ",
+            "-395,7 kJ",
+            "+395,7 kJ",
+            "-494,6 kJ"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "name": "Energías de enlace",
+      "questions": [
+        {
+          "text": "Romper un enlace químico es un proceso...",
+          "answers": [
+            "exotérmico: se libera energía",
+            "exotérmico solo en los enlaces dobles",
+            "endotérmico: hay que aportar energía",
+            "sin intercambio de energía"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "H<sub>2</sub> + Cl<sub>2</sub> → 2 HCl. Energías de enlace (kJ mol<sup>-1</sup>): H-H 436; Cl-Cl 242; H-Cl 431. ¿Cuánto vale ΔH?",
+          "answers": [
+            "+184 kJ",
+            "-431 kJ",
+            "-184 kJ",
+            "+247 kJ"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "CH<sub>2</sub>=CHCl + Cl<sub>2</sub> → CH<sub>2</sub>Cl-CHCl<sub>2</sub>. Energías de enlace (kJ mol<sup>-1</sup>): C=C 608; Cl-Cl 242; C-C 348; C-Cl 328. ¿Cuánto vale ΔH?",
+          "answers": [
+            "-154 kJ mol<sup>-1</sup>",
+            "+174 kJ mol<sup>-1</sup>",
+            "-396 kJ mol<sup>-1</sup>",
+            "+154 kJ mol<sup>-1</sup>"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "Combustión del etanol: C<sub>2</sub>H<sub>5</sub>OH + 3 O<sub>2</sub> → 2 CO<sub>2</sub> + 3 H<sub>2</sub>O. Energías de enlace (kJ mol<sup>-1</sup>): C-C 348; C-H 412; C-O 358; O-H 463; O=O 498; C=O 799. ¿Cuánto vale ΔH?",
+          "answers": [
+            "-1714 kJ",
+            "+347 kJ",
+            "+1251 kJ",
+            "-1251 kJ"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Por qué la entalpía calculada con energías de enlace es solo aproximada?",
+          "answers": [
+            "Las energías de enlace son valores medios obtenidos de moléculas distintas",
+            "No se tienen en cuenta los enlaces que se forman",
+            "Solo sirven para reacciones en disolución",
+            "Las energías de enlace dependen de la presión"
+          ],
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "name": "Calor a presión y a volumen constante",
+      "questions": [
+        {
+          "text": "¿Qué relación hay entre el calor a presión constante y a volumen constante?",
+          "answers": [
+            "Q<sub>p</sub> = Q<sub>v</sub> + Δn(gas)·R·T",
+            "Q<sub>p</sub> = Q<sub>v</sub> - Δn(gas)·R·T",
+            "Q<sub>p</sub> = Q<sub>v</sub> siempre",
+            "Q<sub>p</sub> = Q<sub>v</sub>·Δn(gas)·R·T"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Cuándo son iguales Q<sub>p</sub> y Q<sub>v</sub>?",
+          "answers": [
+            "Nunca",
+            "Cuando la reacción es exotérmica",
+            "Siempre",
+            "Cuando no varía el número de moles de gas (Δn = 0)"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "CH<sub>4</sub>(g) + 2 O<sub>2</sub>(g) → CO<sub>2</sub>(g) + 2 H<sub>2</sub>O(l). ¿Cuánto vale Δn(gas)?",
+          "answers": [
+            "0",
+            "-2",
+            "-1",
+            "+1"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "Para la combustión del metano (ΔH° = -890,3 kJ, 25 °C, Δn = -2), ¿cuánto vale Q<sub>v</sub>? (R = 8,314 J K<sup>-1</sup> mol<sup>-1</sup>)",
+          "answers": [
+            "-885,3 kJ",
+            "+885,3 kJ",
+            "-890,3 kJ",
+            "-895,3 kJ"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "C<sub>2</sub>H<sub>2</sub>(g) + HCl(g) → CH<sub>2</sub>=CHCl(g), ΔH° = -97,3 kJ a 25 °C. ¿Cuánto vale el calor a volumen constante?",
+          "answers": [
+            "-94,9 kJ",
+            "-99,8 kJ",
+            "-97,3 kJ (igual que Q<sub>p</sub>)",
+            "2380 kJ"
+          ],
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "name": "Entropía y energía de Gibbs",
+      "questions": [
+        {
+          "text": "A presión y temperatura constantes, una reacción es espontánea si...",
+          "answers": [
+            "ΔG > 0",
+            "ΔG < 0",
+            "ΔS > 0",
+            "ΔH < 0"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué signo tiene ΔS para CH<sub>2</sub>=CHCl(g) + Cl<sub>2</sub>(g) → CH<sub>2</sub>Cl-CHCl<sub>2</sub>(l)?",
+          "answers": [
+            "Positivo: la reacción es exotérmica",
+            "Cero: el número de átomos no cambia",
+            "Negativo: se pasa de 2 mol de gas a un líquido (menos desorden)",
+            "Positivo: se forma una molécula más grande"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "Una reacción con ΔH < 0 y ΔS < 0 es espontánea...",
+          "answers": [
+            "a ninguna temperatura",
+            "a temperaturas bajas",
+            "a cualquier temperatura",
+            "a temperaturas altas"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "Una reacción con ΔH > 0 y ΔS > 0 es espontánea...",
+          "answers": [
+            "a ninguna temperatura",
+            "a temperaturas altas",
+            "a temperaturas bajas",
+            "a cualquier temperatura"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "Una reacción con ΔH < 0 y ΔS > 0 es espontánea...",
+          "answers": [
+            "a cualquier temperatura",
+            "solo a temperaturas bajas",
+            "a ninguna temperatura",
+            "solo a temperaturas altas"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "Una reacción tiene ΔH° = -92 kJ y ΔS° = -199 J K<sup>-1</sup>. ¿En qué condiciones es espontánea?",
+          "answers": [
+            "Por debajo de 0,462 K",
+            "Por debajo de 462 K",
+            "A cualquier temperatura",
+            "Por encima de 462 K"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "Para la misma reacción (ΔH° = -92 kJ, ΔS° = -199 J K<sup>-1</sup>), ¿cuánto vale ΔG° a 298 K?",
+          "answers": [
+            "+59210 kJ",
+            "-32,7 kJ",
+            "+32,7 kJ",
+            "-151,3 kJ"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "name": "Diagramas de energía",
+      "questions": [
+        {
+          "text": "En el diagrama entálpico de una reacción endotérmica...",
+          "answers": [
+            "los productos están por encima de los reactivos",
+            "reactivos y productos están al mismo nivel",
+            "no hay energía de activación",
+            "los productos están por debajo de los reactivos"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "En un diagrama de energía, la energía de activación es...",
+          "answers": [
+            "la energía de los productos",
+            "la diferencia entre el estado de transición y los productos",
+            "la diferencia entre el estado de transición y los reactivos",
+            "la diferencia entre productos y reactivos"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "Si E<sub>a</sub>(directa) = 50 kJ y E<sub>a</sub>(inversa) = 80 kJ, ¿cuánto vale ΔH de la reacción directa?",
+          "answers": [
+            "+30 kJ",
+            "+130 kJ",
+            "-130 kJ",
+            "-30 kJ"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Qué hace un catalizador con la entalpía de una reacción?",
+          "answers": [
+            "No la modifica: solo disminuye la energía de activación",
+            "La hace más negativa",
+            "La hace cero",
+            "La hace más positiva"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Cómo se ve un catalizador en el diagrama de energía?",
+          "answers": [
+            "Los productos bajan de energía",
+            "Los reactivos suben de energía",
+            "La cima (estado de transición) baja, pero reactivos y productos no se mueven",
+            "Desaparece la cima"
+          ],
+          "correct": 2
+        }
+      ]
+    }
+  ]
+}

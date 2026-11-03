@@ -1,0 +1,445 @@
+{
+  "title": "PAU Química · Equilibrio químico",
+  "levels": [
+    {
+      "name": "Conceptos clave",
+      "questions": [
+        {
+          "text": "¿Qué significa que un equilibrio químico es dinámico?",
+          "answers": [
+            "Las reacciones directa e inversa continúan con la misma velocidad y las concentraciones no cambian",
+            "Solo hay productos",
+            "La reacción se ha detenido por completo",
+            "Las concentraciones de reactivos y productos son iguales"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué modifica el valor de la constante de equilibrio K<sub>c</sub>?",
+          "answers": [
+            "Añadir un catalizador",
+            "La presión",
+            "Solo la temperatura",
+            "La concentración inicial de los reactivos"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "Una constante de equilibrio muy grande (K = 10<sup>10</sup>) indica que...",
+          "answers": [
+            "el equilibrio está muy desplazado hacia los productos",
+            "la reacción es endotérmica",
+            "la reacción es muy rápida",
+            "el equilibrio está desplazado hacia los reactivos"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué dice el principio de Le Châtelier?",
+          "answers": [
+            "Un catalizador desplaza el equilibrio hacia los productos",
+            "En el equilibrio, ΔH = 0",
+            "Toda reacción llega al equilibrio en el mismo tiempo",
+            "Si se perturba un sistema en equilibrio, evoluciona en el sentido que contrarresta la perturbación"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Qué es el grado de disociación (α)?",
+          "answers": [
+            "La concentración de productos en el equilibrio",
+            "La velocidad de disociación",
+            "La fracción de los moles iniciales de un reactivo que se han disociado",
+            "El valor de K<sub>c</sub> expresado en %"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "name": "Expresión de la constante",
+      "questions": [
+        {
+          "text": "Expresión de K<sub>c</sub> para N<sub>2</sub>(g) + 3 H<sub>2</sub>(g) ↔ 2 NH<sub>3</sub>(g):",
+          "answers": [
+            "K<sub>c</sub> = [NH<sub>3</sub>] / ([N<sub>2</sub>][H<sub>2</sub>])",
+            "K<sub>c</sub> = [NH<sub>3</sub>]<sup>2</sup> / ([N<sub>2</sub>][H<sub>2</sub>]<sup>3</sup>)",
+            "K<sub>c</sub> = ([N<sub>2</sub>][H<sub>2</sub>]<sup>3</sup>) / [NH<sub>3</sub>]<sup>2</sup>",
+            "K<sub>c</sub> = 2[NH<sub>3</sub>] / ([N<sub>2</sub>]·3[H<sub>2</sub>])"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "Expresión de K<sub>c</sub> para CaCO<sub>3</sub>(s) ↔ CaO(s) + CO<sub>2</sub>(g):",
+          "answers": [
+            "K<sub>c</sub> = 1 / [CO<sub>2</sub>]",
+            "K<sub>c</sub> = [CaO][CO<sub>2</sub>] / [CaCO<sub>3</sub>]",
+            "K<sub>c</sub> = [CaO][CO<sub>2</sub>]",
+            "K<sub>c</sub> = [CO<sub>2</sub>]"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Qué relación hay entre K<sub>p</sub> y K<sub>c</sub>?",
+          "answers": [
+            "K<sub>p</sub> = K<sub>c</sub> siempre",
+            "K<sub>p</sub> = K<sub>c</sub>·RT siempre",
+            "K<sub>p</sub> = K<sub>c</sub>·(RT)<sup>Δn</sup>",
+            "K<sub>c</sub> = K<sub>p</sub>·(RT)<sup>Δn</sup>"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "Si para A ↔ B la constante vale 4, ¿cuánto vale para B ↔ A?",
+          "answers": [
+            "0,25",
+            "-4",
+            "16",
+            "4"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "Si multiplicamos por 2 todos los coeficientes de una ecuación, la nueva K...",
+          "answers": [
+            "es el doble",
+            "no cambia",
+            "es la mitad",
+            "es la anterior elevada al cuadrado"
+          ],
+          "correct": 3
+        }
+      ]
+    },
+    {
+      "name": "Cálculo de K_c",
+      "questions": [
+        {
+          "text": "N<sub>2</sub> + 3 H<sub>2</sub> ↔ 2 NH<sub>3</sub> a 1 000 K. En el equilibrio: [N<sub>2</sub>] = 0,142; [H<sub>2</sub>] = 1,84; [NH<sub>3</sub>] = 0,36 mol L<sup>-1</sup>. ¿Cuánto vale K<sub>c</sub>?",
+          "answers": [
+            "6,83",
+            "0,147",
+            "0,496",
+            "1,38"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "NO<sub>2</sub> + SO<sub>2</sub> ↔ NO + SO<sub>3</sub> en un recipiente de 2 L. En el equilibrio hay 0,2 mol de NO<sub>2</sub>; 1,6 mol de SO<sub>2</sub>; 0,8 mol de NO y 1,2 mol de SO<sub>3</sub>. ¿Cuánto vale K<sub>c</sub>?",
+          "answers": [
+            "12",
+            "0,75",
+            "0,33",
+            "3,0"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "N<sub>2</sub>O<sub>4</sub> ↔ 2 NO<sub>2</sub>. En un matraz de 2,0 L hay en equilibrio 0,20 mol de N<sub>2</sub>O<sub>4</sub> y 0,29 mol de NO<sub>2</sub>. ¿Cuánto vale K<sub>c</sub>?",
+          "answers": [
+            "1,45",
+            "4,76",
+            "0,42",
+            "0,21"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "H<sub>2</sub> + I<sub>2</sub> ↔ 2 HI. Se ponen 1,0 mol de H<sub>2</sub> y 1,0 mol de I<sub>2</sub> en 1 L y en el equilibrio hay 1,56 mol de HI. ¿Cuánto vale K<sub>c</sub>?",
+          "answers": [
+            "32,2",
+            "7,09",
+            "50,3",
+            "1,99 × 10<sup>-2</sup>"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "PCl<sub>5</sub> ↔ PCl<sub>3</sub> + Cl<sub>2</sub>. Se ponen 1,0 mol de PCl<sub>5</sub> en un recipiente de 2 L y se disocia un 40 %. ¿Cuánto vale K<sub>c</sub>?",
+          "answers": [
+            "0,133",
+            "7,5",
+            "0,267",
+            "0,667"
+          ],
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "name": "K_p y presiones parciales",
+      "questions": [
+        {
+          "text": "¿Cuánto vale Δn(gas) para N<sub>2</sub>(g) + 3 H<sub>2</sub>(g) ↔ 2 NH<sub>3</sub>(g)?",
+          "answers": [
+            "+2",
+            "-2",
+            "0",
+            "-4"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Cuándo es K<sub>p</sub> igual a K<sub>c</sub>?",
+          "answers": [
+            "Cuando Δn(gas) = 0",
+            "Nunca",
+            "Cuando T = 273 K",
+            "Siempre"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "N<sub>2</sub> + 3 H<sub>2</sub> ↔ 2 NH<sub>3</sub>, K<sub>c</sub> = 0,147 a 1 000 K. ¿Cuánto vale K<sub>p</sub>? (R = 0,082 atm L K<sup>-1</sup> mol<sup>-1</sup>)",
+          "answers": [
+            "2,18 × 10<sup>-5</sup>",
+            "985",
+            "2,12 × 10<sup>-9</sup>",
+            "1,79 × 10<sup>-3</sup>"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "N<sub>2</sub>O<sub>4</sub> ↔ 2 NO<sub>2</sub>, K<sub>c</sub> = 0,21 a 373 K. ¿Cuánto vale K<sub>p</sub>?",
+          "answers": [
+            "12,9",
+            "6,87 × 10<sup>-3</sup>",
+            "6,43",
+            "0,21"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "En una mezcla gaseosa a 2,0 atm, la fracción molar del NO<sub>2</sub> es 0,25. ¿Cuál es su presión parcial?",
+          "answers": [
+            "0,50 atm",
+            "2,25 atm",
+            "8,0 atm",
+            "0,125 atm"
+          ],
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "name": "Cociente de reacción",
+      "questions": [
+        {
+          "text": "Si el cociente de reacción Q es menor que K, el sistema...",
+          "answers": [
+            "evoluciona hacia los productos",
+            "evoluciona hacia los reactivos",
+            "ya está en equilibrio",
+            "no puede llegar al equilibrio"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "Si Q es mayor que K, el sistema...",
+          "answers": [
+            "aumenta su K",
+            "evoluciona hacia los productos",
+            "ya está en equilibrio",
+            "evoluciona hacia los reactivos"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "A ↔ B + C, K<sub>c</sub> = 0,50. En un momento dado [A] = 0,20; [B] = [C] = 0,40 mol L<sup>-1</sup>. ¿Hacia dónde evoluciona el sistema?",
+          "answers": [
+            "Q = 0,80 > K<sub>c</sub>: hacia los reactivos",
+            "Q = 0,50: ya está en equilibrio",
+            "Q = 4,0 > K<sub>c</sub>: hacia los productos",
+            "Q = 0,80 > K<sub>c</sub>: hacia los productos"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "H<sub>2</sub> + I<sub>2</sub> ↔ 2 HI, K<sub>c</sub> = 50. Si [H<sub>2</sub>] = [I<sub>2</sub>] = 0,10 y [HI] = 0,50 mol L<sup>-1</sup>, ¿qué pasa?",
+          "answers": [
+            "Q = 2,5 < K<sub>c</sub>: se descompone HI",
+            "Q = 50: está en equilibrio",
+            "Q = 25 < K<sub>c</sub>: se descompone HI",
+            "Q = 25 < K<sub>c</sub>: se forma más HI"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "N<sub>2</sub>O<sub>4</sub> ↔ 2 NO<sub>2</sub>, K<sub>c</sub> = 0,21. Si [N<sub>2</sub>O<sub>4</sub>] = 0,10 y [NO<sub>2</sub>] = 0,10 mol L<sup>-1</sup>, ¿qué pasa?",
+          "answers": [
+            "Está en equilibrio",
+            "Q = 1,0 > K<sub>c</sub>: se forma más N<sub>2</sub>O<sub>4</sub>",
+            "Q = 0,10 < K<sub>c</sub>: se forma más N<sub>2</sub>O<sub>4</sub>",
+            "Q = 0,10 < K<sub>c</sub>: se forma más NO<sub>2</sub>"
+          ],
+          "correct": 3
+        }
+      ]
+    },
+    {
+      "name": "Le Châtelier: concentración y presión",
+      "questions": [
+        {
+          "text": "N<sub>2</sub> + 3 H<sub>2</sub> ↔ 2 NH<sub>3</sub>, ΔH < 0. ¿Qué pasa si aumentamos la presión?",
+          "answers": [
+            "No cambia nada: la presión solo afecta a K<sub>p</sub>",
+            "Se desplaza hacia el NH<sub>3</sub> (menos moles de gas): aumenta el rendimiento",
+            "Aumenta el valor de K<sub>c</sub>",
+            "Se desplaza hacia los reactivos: disminuye el rendimiento"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "En la síntesis del NH<sub>3</sub>, ¿qué pasa si se va retirando el NH<sub>3</sub> a medida que se forma?",
+          "answers": [
+            "No hay ningún efecto",
+            "Disminuye K<sub>c</sub>",
+            "El equilibrio se desplaza hacia los reactivos",
+            "El equilibrio se desplaza hacia los productos y aumenta el rendimiento"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "NO<sub>2</sub> + SO<sub>2</sub> ↔ NO + SO<sub>3</sub>. ¿Qué pasa si añadimos NO al sistema en equilibrio?",
+          "answers": [
+            "Aumenta K<sub>c</sub>",
+            "Se desplaza hacia NO<sub>2</sub> y SO<sub>2</sub> (hacia los reactivos)",
+            "Se desplaza hacia NO y SO<sub>3</sub>",
+            "No cambia, porque K<sub>c</sub> es constante"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "NO<sub>2</sub> + SO<sub>2</sub> ↔ NO + SO<sub>3</sub>. ¿Qué pasa si aumentamos la presión reduciendo el volumen?",
+          "answers": [
+            "Se desplaza hacia los productos",
+            "Aumenta K<sub>c</sub>",
+            "No se desplaza: hay los mismos moles de gas a cada lado",
+            "Se desplaza hacia los reactivos"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué pasa si añadimos un catalizador a un sistema en equilibrio?",
+          "answers": [
+            "Se desplaza hacia la reacción exotérmica",
+            "Se desplaza hacia los productos",
+            "Aumenta el valor de K",
+            "El equilibrio no se desplaza: solo se llega antes a él"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Qué pasa si añadimos un gas inerte (He) a volumen constante?",
+          "answers": [
+            "Se desplaza hacia donde hay más moles de gas",
+            "No se desplaza: las concentraciones de las especies no cambian",
+            "Se desplaza hacia donde hay menos moles de gas",
+            "Cambia el valor de K<sub>c</sub>"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "name": "Le Châtelier: temperatura",
+      "questions": [
+        {
+          "text": "N<sub>2</sub> + 3 H<sub>2</sub> ↔ 2 NH<sub>3</sub>, ΔH < 0. ¿Qué pasa si aumentamos la temperatura?",
+          "answers": [
+            "Aumenta K<sub>c</sub> pero no el rendimiento",
+            "No hay ningún efecto",
+            "Se desplaza hacia el NH<sub>3</sub>: aumenta el rendimiento",
+            "Se desplaza hacia los reactivos: disminuyen el rendimiento y K<sub>c</sub>"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "En una reacción endotérmica, al aumentar la temperatura K<sub>c</sub>...",
+          "answers": [
+            "se hace cero",
+            "aumenta",
+            "no cambia",
+            "disminuye"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "NO<sub>2</sub> + SO<sub>2</sub> ↔ NO + SO<sub>3</sub>. K<sub>c</sub> = 84,3 a 460 °C y K<sub>c</sub> = 9,6 a 800 °C. ¿Cómo es la reacción directa?",
+          "answers": [
+            "Exotérmica: K<sub>c</sub> disminuye al aumentar la temperatura",
+            "Exotérmica: a más temperatura hay más productos",
+            "Endotérmica: K<sub>c</sub> disminuye al aumentar la temperatura",
+            "No se puede saber sin ΔH"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "N<sub>2</sub>O<sub>4</sub> (incoloro) ↔ 2 NO<sub>2</sub> (marrón), reacción endotérmica. ¿Qué vemos si calentamos el recipiente?",
+          "answers": [
+            "El gas se vuelve incoloro",
+            "El color marrón se intensifica: se forma más NO<sub>2</sub>",
+            "El color no cambia",
+            "El color marrón se aclara porque se consume NO<sub>2</sub>"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Por qué el proceso Haber se hace a unos 450 °C si a temperatura baja el rendimiento es mayor?",
+          "answers": [
+            "A temperatura baja la reacción es demasiado lenta: se busca un compromiso entre rendimiento y velocidad",
+            "Porque el catalizador solo existe a 450 °C",
+            "Porque a temperatura baja el NH<sub>3</sub> explota",
+            "Porque a 450 °C K<sub>c</sub> es máxima"
+          ],
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "name": "Problemas completos",
+      "questions": [
+        {
+          "text": "NO<sub>2</sub> + SO<sub>2</sub> ↔ NO + SO<sub>3</sub> (K<sub>c</sub> = 3,0) en 2 L con 0,2 mol de NO<sub>2</sub>; 1,6 de SO<sub>2</sub>; 0,8 de NO y 1,2 de SO<sub>3</sub>. Se añaden 10 g de NO (M = 30 g mol<sup>-1</sup>). ¿Cuál es la nueva [NO<sub>2</sub>] en el equilibrio?",
+          "answers": [
+            "0,100 mol L<sup>-1</sup>",
+            "0,126 mol L<sup>-1</sup>",
+            "0,251 mol L<sup>-1</sup>",
+            "0,074 mol L<sup>-1</sup>"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "H<sub>2</sub> + I<sub>2</sub> ↔ 2 HI, K<sub>c</sub> = 49. Se ponen 1,0 mol de H<sub>2</sub> y 1,0 mol de I<sub>2</sub> en 1 L. ¿Cuántos moles de HI hay en el equilibrio?",
+          "answers": [
+            "0,78 mol",
+            "1,56 mol",
+            "0,22 mol",
+            "7,0 mol"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "PCl<sub>5</sub> ↔ PCl<sub>3</sub> + Cl<sub>2</sub>, K<sub>c</sub> = 0,040. Se ponen 0,10 mol de PCl<sub>5</sub> en 1 L. ¿Cuál es el grado de disociación?",
+          "answers": [
+            "46 %",
+            "4,6 %",
+            "63 %",
+            "40 %"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "Para el equilibrio anterior (PCl<sub>5</sub> ↔ PCl<sub>3</sub> + Cl<sub>2</sub>, K<sub>c</sub> = 0,040) a 523 K, ¿cuánto vale K<sub>p</sub>?",
+          "answers": [
+            "1,72",
+            "174",
+            "9,33 × 10<sup>-4</sup>",
+            "0,040"
+          ],
+          "correct": 0
+        }
+      ]
+    }
+  ]
+}

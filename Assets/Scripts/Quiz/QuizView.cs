@@ -8,8 +8,10 @@ public class QuizView : MonoBehaviour
 {
     [SerializeField] private TMP_Text titleText;
     [SerializeField] private TMP_Text levelText;
-    [SerializeField] private TMP_Text progressText;
     [SerializeField] private TMP_Text questionText;
+
+    [SerializeField] private Slider progressSlider;
+    [SerializeField] private TMP_Text progressText;
 
     [SerializeField] private Transform answersContainer;
 
@@ -60,6 +62,7 @@ public class QuizView : MonoBehaviour
         {
             levelText.text = "";
             progressText.text = "";
+            progressSlider.gameObject.SetActive(false);
             questionText.text = "¡Quiz completado!";
             ShowEndButtons();
             return;
@@ -78,6 +81,8 @@ public class QuizView : MonoBehaviour
 
         QuestionData question = level.questions[questionIndex];
         progressText.text = (questionIndex + 1) + " / " + level.questions.Count;
+        progressSlider.maxValue = level.questions.Count;
+        progressSlider.value = questionIndex + 1;
         questionText.text = question.text;
 
         for (int i = 0; i < question.answers.Count; i++)
@@ -90,7 +95,9 @@ public class QuizView : MonoBehaviour
         foreach (int answerIndex in shownOrder)
         {
             Button button = Instantiate(answerButtonPrefab, answersContainer);
-            button.GetComponentInChildren<TMP_Text>().text = question.answers[answerIndex];
+            QuizQuestion answerText = button.GetComponentInChildren<QuizQuestion>();
+            answerText.question.text = question.answers[answerIndex];
+            answerText.letter.text = GetLetter(answerIndex).ToString();
             button.onClick.AddListener(() => Answer(question, answerIndex));
             answerButtons.Add(button);
         }
@@ -133,6 +140,7 @@ public class QuizView : MonoBehaviour
         onLevelCompleted.Invoke();
 
         progressText.text = "";
+        progressSlider.gameObject.SetActive(false);
         questionText.text = level.name + " completado\n" + correctCount + " / " + level.questions.Count + " correctas\n" + "+" + brain + " inteligencia   +" + coins + " monedas";
         ShowEndButtons();
     }
@@ -167,6 +175,21 @@ public class QuizView : MonoBehaviour
             int temp = list[i];
             list[i] = list[j];
             list[j] = temp;
+        }
+    }
+
+    private char GetLetter(int index)
+    {
+        switch (index)
+        {
+            case 0:
+                return 'A';
+            case 1:
+                return 'B';
+            case 2:
+                return 'C';
+            default:
+                return 'D';
         }
     }
 }

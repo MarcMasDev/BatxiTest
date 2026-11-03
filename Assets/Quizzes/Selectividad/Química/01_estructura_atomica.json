@@ -1,0 +1,330 @@
+{
+  "title": "PAU Química · Estructura atómica y tabla periódica",
+  "levels": [
+    {
+      "name": "Modelos atómicos y orbitales",
+      "questions": [
+        {
+          "text": "¿Qué aportó el modelo atómico de Bohr?",
+          "answers": [
+            "Los electrones solo pueden estar en órbitas con energías determinadas (cuantizadas)",
+            "El núcleo concentra casi toda la masa y la carga positiva",
+            "El átomo es una esfera positiva con los electrones incrustados",
+            "Los electrones son ondas sin posición definida"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "Según el modelo mecanocuántico, un orbital atómico es...",
+          "answers": [
+            "Una capa donde caben exactamente 8 electrones",
+            "Una región del espacio donde hay una probabilidad elevada de encontrar el electrón",
+            "Una trayectoria elíptica del electrón alrededor del núcleo",
+            "Una órbita circular de radio fijo por la que se mueve el electrón"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Cuántos electrones puede contener como máximo un orbital?",
+          "answers": [
+            "2, con espines opuestos (principio de exclusión de Pauli)",
+            "8",
+            "Depende del número cuántico l",
+            "2, con el mismo espín"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué dice la regla de Hund?",
+          "answers": [
+            "La energía de un electrón solo depende del número cuántico n",
+            "En orbitales de la misma energía, los electrones se colocan desapareados y con espines paralelos antes de aparearse",
+            "Dos electrones de un átomo no pueden tener los cuatro números cuánticos iguales",
+            "Los orbitales se llenan por orden creciente de energía"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué valores puede tener el número cuántico l si n = 3?",
+          "answers": [
+            "-1, 0 y +1",
+            "1, 2 y 3",
+            "0, 1 y 2",
+            "0, 1, 2 y 3"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Cuántos orbitales hay en una subcapa d?",
+          "answers": [
+            "10",
+            "7",
+            "3",
+            "5"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Qué combinación de números cuánticos (n, l, m<sub>l</sub>, m<sub>s</sub>) es posible?",
+          "answers": [
+            "(2, 2, 0, +1/2)",
+            "(1, 0, 0, 0)",
+            "(3, 1, -2, -1/2)",
+            "(3, 2, -1, +1/2)"
+          ],
+          "correct": 3
+        }
+      ]
+    },
+    {
+      "name": "Configuraciones electrónicas",
+      "questions": [
+        {
+          "text": "Configuración electrónica del potasio (Z = 19):",
+          "answers": [
+            "1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 3d<sup>1</sup>",
+            "1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup>",
+            "1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>5</sup> 4s<sup>2</sup>",
+            "1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>1</sup>"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "Configuración electrónica del hierro (Z = 26):",
+          "answers": [
+            "[Ar] 4s<sup>2</sup> 3d<sup>6</sup>",
+            "[Ar] 4s<sup>2</sup> 4p<sup>6</sup>",
+            "[Kr] 4s<sup>2</sup> 3d<sup>6</sup>",
+            "[Ar] 3d<sup>8</sup>"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "Configuración electrónica del ion Na<sup>+</sup> (Z = 11):",
+          "answers": [
+            "1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup>",
+            "1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>5</sup>",
+            "1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>1</sup>",
+            "1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup>"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "Grupo, periodo y bloque del fósforo (Z = 15):",
+          "answers": [
+            "Grupo 15, periodo 2, bloque p",
+            "Grupo 5, periodo 3, bloque d",
+            "Grupo 3, periodo 5, bloque p",
+            "Grupo 15, periodo 3, bloque p"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "Un elemento tiene la capa de valencia ns<sup>2</sup> np<sup>5</sup>. ¿A qué grupo pertenece?",
+          "answers": [
+            "Grupo 7",
+            "Grupo 2",
+            "Grupo 17 (halógenos)",
+            "Grupo 15"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Cuántos electrones desapareados tiene el fósforo (Z = 15) en estado fundamental?",
+          "answers": [
+            "3",
+            "0",
+            "1",
+            "5"
+          ],
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "name": "Radio y electronegatividad",
+      "questions": [
+        {
+          "text": "Ordena por radio atómico creciente: Li, F y Na.",
+          "answers": [
+            "F < Na < Li",
+            "Na < Li < F",
+            "Li < F < Na",
+            "F < Li < Na"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Por qué el radio atómico disminuye al avanzar en un periodo?",
+          "answers": [
+            "Aumenta el número de capas electrónicas",
+            "Aumenta el apantallamiento de los electrones internos",
+            "Aumenta la carga nuclear efectiva y los electrones entran en la misma capa",
+            "Disminuye el número de protones del núcleo"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Quién es más pequeño, el átomo de Na o el ion Na<sup>+</sup>?",
+          "answers": [
+            "Na: es neutro",
+            "Son iguales: tienen los mismos protones",
+            "Na<sup>+</sup>: ha perdido la capa 3s",
+            "Na: tiene menos electrones"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "Los iones O<sup>2-</sup>, F<sup>-</sup>, Na<sup>+</sup> y Mg<sup>2+</sup> tienen todos 10 electrones. ¿Cuál es el más grande?",
+          "answers": [
+            "Na<sup>+</sup>: es un metal alcalino",
+            "Mg<sup>2+</sup>: tiene más protones",
+            "Todos tienen el mismo radio porque tienen los mismos electrones",
+            "O<sup>2-</sup>: tiene menos protones para atraer el mismo número de electrones"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Cómo varía la electronegatividad en la tabla periódica?",
+          "answers": [
+            "Aumenta hacia abajo y hacia la izquierda",
+            "Los gases nobles son los más electronegativos",
+            "Aumenta hacia arriba y hacia la derecha (el F es el más electronegativo)",
+            "Es igual en todo un grupo"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "name": "Energía de ionización y afinidad",
+      "questions": [
+        {
+          "text": "¿Qué es la primera energía de ionización de un elemento?",
+          "answers": [
+            "La energía necesaria para romper un mol de enlaces covalentes",
+            "La energía que se libera cuando un átomo gaseoso capta un electrón",
+            "La energía necesaria para arrancar el electrón más externo de un átomo en estado gaseoso y fundamental",
+            "La energía que se libera al formar un mol de cristal iónico a partir de los iones gaseosos"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué signo tiene la energía de ionización?",
+          "answers": [
+            "Siempre positivo: hay que aportar energía para arrancar el electrón",
+            "Positivo en los metales y negativo en los no metales",
+            "Siempre negativo: se libera energía",
+            "Depende de la temperatura"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué es la afinidad electrónica?",
+          "answers": [
+            "La energía para arrancar un electrón",
+            "La energía intercambiada cuando un átomo gaseoso capta un electrón",
+            "La tendencia a compartir electrones",
+            "La energía de un enlace iónico"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "Entre K, Mg y P, ¿cuál tiene la primera energía de ionización más pequeña?",
+          "answers": [
+            "Mg: tiene la subcapa 3s llena",
+            "Los tres igual, porque tienen electrones en la capa 3",
+            "P: es el que tiene más electrones de valencia",
+            "K: su electrón externo está más lejos del núcleo y más apantallado"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Por qué la segunda energía de ionización del Na es mucho mayor que la primera?",
+          "answers": [
+            "El Na<sup>+</sup> tiene más protones que el Na",
+            "El segundo electrón se arranca de una capa completa más interna (2p<sup>6</sup>)",
+            "No es mayor: son iguales",
+            "El segundo electrón está en la capa 4s"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "La 1.ª EI del Li es 520 kJ mol<sup>-1</sup> y la del Be 899 kJ mol<sup>-1</sup>. ¿Por qué es mayor la del Be?",
+          "answers": [
+            "El Li tiene más protones",
+            "El Be tiene más capas electrónicas",
+            "El Be es un gas noble",
+            "Tiene más carga nuclear y el electrón sale de la misma capa (n = 2)"
+          ],
+          "correct": 3
+        }
+      ]
+    },
+    {
+      "name": "Espectros y fotones (cálculos)",
+      "questions": [
+        {
+          "text": "¿Por qué los espectros atómicos son de líneas y no continuos?",
+          "answers": [
+            "Las energías de los electrones están cuantizadas: solo se emiten fotones de energías concretas",
+            "Los átomos solo emiten luz visible",
+            "Los electrones giran a velocidad constante",
+            "El espectroscopio filtra los colores"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué energía tiene un fotón de luz azul de λ = 420 nm? (h = 6,63 × 10<sup>-34</sup> J s; c = 3,0 × 10<sup>8</sup> m/s)",
+          "answers": [
+            "2,85 × 10<sup>5</sup> J",
+            "4,74 × 10<sup>-28</sup> J",
+            "4,74 × 10<sup>-19</sup> J",
+            "9,28 × 10<sup>-49</sup> J"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Un mol de fotones de λ = 420 nm puede ionizar un mol de átomos de litio (EI = 520,2 kJ mol<sup>-1</sup>)?",
+          "answers": [
+            "Sí: aporta ≈ 285 kJ mol<sup>-1</sup>, más que la EI",
+            "Sí: cualquier luz visible ioniza los metales alcalinos",
+            "No: solo aporta ≈ 285 kJ mol<sup>-1</sup>, menos que la EI",
+            "No se puede saber sin conocer la frecuencia"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "La EI del sodio es 495,8 kJ mol<sup>-1</sup>. ¿Cuál es la longitud de onda máxima de un fotón capaz de ionizar un átomo de Na?",
+          "answers": [
+            "4,01 × 10<sup>-31</sup> m",
+            "589 nm (la línea amarilla del sodio)",
+            "242 nm",
+            "2415 nm"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué frecuencia tiene la línea amarilla de emisión del sodio (λ = 589 nm)?",
+          "answers": [
+            "1,96 × 10<sup>-15</sup> Hz",
+            "5,09 × 10<sup>14</sup> Hz",
+            "5,09 × 10<sup>5</sup> Hz",
+            "1,77 × 10<sup>2</sup> Hz"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "Un salto electrónico emite 3,37 × 10<sup>-19</sup> J. ¿A qué longitud de onda y zona del espectro corresponde?",
+          "answers": [
+            "590 nm, visible",
+            "59 nm, ultravioleta",
+            "5902 nm, infrarrojo",
+            "590 nm, ultravioleta"
+          ],
+          "correct": 0
+        }
+      ]
+    }
+  ]
+}

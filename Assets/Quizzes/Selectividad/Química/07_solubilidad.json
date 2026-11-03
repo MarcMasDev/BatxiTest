@@ -1,0 +1,245 @@
+{
+  "title": "PAU Química · Solubilidad y precipitación",
+  "levels": [
+    {
+      "name": "Conceptos clave",
+      "questions": [
+        {
+          "text": "Expresión del producto de solubilidad del PbI<sub>2</sub>:",
+          "answers": [
+            "K<sub>ps</sub> = [Pb<sup>2+</sup>][I<sup>-</sup>]<sup>2</sup>",
+            "K<sub>ps</sub> = [Pb<sup>2+</sup>]·2[I<sup>-</sup>]",
+            "K<sub>ps</sub> = [PbI<sub>2</sub>] / ([Pb<sup>2+</sup>][I<sup>-</sup>]<sup>2</sup>)",
+            "K<sub>ps</sub> = [Pb<sup>2+</sup>][I<sup>-</sup>]"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué es el efecto del ion común?",
+          "answers": [
+            "Dos sales con un ion común tienen la misma K<sub>ps</sub>",
+            "Un ion común cambia el valor de K<sub>ps</sub>",
+            "La solubilidad aumenta si hay un ion común",
+            "La solubilidad de una sal disminuye si la disolución ya contiene uno de sus iones"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Cuándo se forma un precipitado?",
+          "answers": [
+            "Cuando Q es igual a cero",
+            "Siempre que se mezclan dos sales",
+            "Cuando el producto iónico Q supera a K<sub>ps</sub>",
+            "Cuando Q es menor que K<sub>ps</sub>"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué es la solubilidad de una sal?",
+          "answers": [
+            "La velocidad con la que se disuelve",
+            "El valor de K<sub>ps</sub>",
+            "La masa de sal que precipita",
+            "La concentración máxima de sal disuelta, en equilibrio con el sólido (disolución saturada)"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Se pueden comparar directamente las K<sub>ps</sub> de AgCl y Ag<sub>2</sub>CrO<sub>4</sub> para saber cuál es más soluble?",
+          "answers": [
+            "Sí: la de menor K<sub>ps</sub> es más soluble",
+            "Sí: la de mayor K<sub>ps</sub> es siempre más soluble",
+            "No: tienen estequiometrías distintas y hay que calcular la solubilidad de cada una",
+            "No: la K<sub>ps</sub> no tiene relación con la solubilidad"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Por qué añadir un ácido aumenta la solubilidad del CaCO<sub>3</sub>?",
+          "answers": [
+            "El ácido aumenta la K<sub>ps</sub>",
+            "El H<sup>+</sup> reacciona con el CO<sub>3</sub><sup>2-</sup> y el equilibrio de solubilidad se desplaza hacia la disolución",
+            "El ácido aporta un ion común",
+            "El ácido calienta la disolución"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "name": "Razónalo",
+      "questions": [
+        {
+          "text": "¿El PbI<sub>2</sub> es más soluble en agua pura o en una disolución de NaI?",
+          "answers": [
+            "Igual: la K<sub>ps</sub> no cambia",
+            "En NaI: el Na<sup>+</sup> reacciona con el Pb<sup>2+</sup>",
+            "En NaI: hay más iones",
+            "En agua pura: el I<sup>-</sup> del NaI es un ion común"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Qué pasa con la solubilidad del FeS si añadimos Na<sub>2</sub>S?",
+          "answers": [
+            "No cambia",
+            "Aumenta la K<sub>ps</sub>",
+            "Aumenta",
+            "Disminuye, por efecto del ion común (S<sup>2-</sup>)"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Qué pasa con la solubilidad del FeS si añadimos AgNO<sub>3</sub>? (K<sub>ps</sub>(Ag<sub>2</sub>S) = 8,0 × 10<sup>-51</sup>)",
+          "answers": [
+            "No cambia: no hay ningún ion común",
+            "Disminuye por efecto del ion común",
+            "Aumenta: el Ag<sup>+</sup> precipita el S<sup>2-</sup> como Ag<sub>2</sub>S y el equilibrio del FeS se desplaza hacia la disolución",
+            "Disminuye porque precipita AgFe"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "K<sub>ps</sub>(AgCl) = 1,8 × 10<sup>-10</sup> y K<sub>ps</sub>(Ag<sub>2</sub>CrO<sub>4</sub>) = 1,1 × 10<sup>-12</sup>. ¿Qué sal es más soluble en agua?",
+          "answers": [
+            "AgCl (s ≈ 1,3 × 10<sup>-5</sup> M), porque tiene mayor K<sub>ps</sub>",
+            "Las dos igual",
+            "No se puede saber",
+            "Ag<sub>2</sub>CrO<sub>4</sub> (s ≈ 6,5 × 10<sup>-5</sup> M), aunque tenga menor K<sub>ps</sub>"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Por qué se puede usar BaSO<sub>4</sub> como contraste en radiografías si el ion Ba<sup>2+</sup> es tóxico?",
+          "answers": [
+            "El sulfato neutraliza la toxicidad",
+            "Se disuelve por completo y se elimina enseguida",
+            "El Ba<sup>2+</sup> nunca se absorbe",
+            "Es muy poco soluble: la concentración de Ba<sup>2+</sup> disuelto es muy baja"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "Una disolución contiene Cl<sup>-</sup> y I<sup>-</sup> (0,010 M cada uno). Se le añade Pb<sup>2+</sup> poco a poco. ¿Cuál precipita primero? (K<sub>ps</sub>(PbCl<sub>2</sub>) = 1,7 × 10<sup>-5</sup>; K<sub>ps</sub>(PbI<sub>2</sub>) = 9,8 × 10<sup>-9</sup>)",
+          "answers": [
+            "El PbI<sub>2</sub>: necesita una [Pb<sup>2+</sup>] mucho menor para precipitar",
+            "Los dos a la vez",
+            "Ninguno de los dos",
+            "El PbCl<sub>2</sub>: tiene la K<sub>ps</sub> más grande"
+          ],
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "name": "Cálculo de la solubilidad",
+      "questions": [
+        {
+          "text": "Solubilidad molar del BaSO<sub>4</sub> (K<sub>ps</sub> = 1,1 × 10<sup>-10</sup>):",
+          "answers": [
+            "4,79 × 10<sup>-4</sup> mol L<sup>-1</sup>",
+            "1,10 × 10<sup>-10</sup> mol L<sup>-1</sup>",
+            "5,50 × 10<sup>-11</sup> mol L<sup>-1</sup>",
+            "1,05 × 10<sup>-5</sup> mol L<sup>-1</sup>"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "Solubilidad del BaSO<sub>4</sub> en g/L (s = 1,05 × 10<sup>-5</sup> mol L<sup>-1</sup>; M = 233,4 g mol<sup>-1</sup>):",
+          "answers": [
+            "233,4 g L<sup>-1</sup>",
+            "2,45 × 10<sup>-3</sup> g L<sup>-1</sup>",
+            "2,45 g L<sup>-1</sup>",
+            "4,50 × 10<sup>-8</sup> g L<sup>-1</sup>"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "Solubilidad molar del FeS (K<sub>ps</sub> = 8,0 × 10<sup>-19</sup>):",
+          "answers": [
+            "8,00 × 10<sup>-19</sup> mol L<sup>-1</sup>",
+            "8,94 × 10<sup>-10</sup> mol L<sup>-1</sup>",
+            "5,85 × 10<sup>-7</sup> mol L<sup>-1</sup>",
+            "4,00 × 10<sup>-19</sup> mol L<sup>-1</sup>"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "Solubilidad molar del PbI<sub>2</sub> (K<sub>ps</sub> = 9,8 × 10<sup>-9</sup>):",
+          "answers": [
+            "9,90 × 10<sup>-5</sup> mol L<sup>-1</sup>",
+            "1,35 × 10<sup>-3</sup> mol L<sup>-1</sup>",
+            "1,70 × 10<sup>-3</sup> mol L<sup>-1</sup>",
+            "2,14 × 10<sup>-3</sup> mol L<sup>-1</sup>"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "La solubilidad del Ag<sub>2</sub>CrO<sub>4</sub> es 6,5 × 10<sup>-5</sup> mol L<sup>-1</sup>. ¿Cuánto vale su K<sub>ps</sub>?",
+          "answers": [
+            "2,75 × 10<sup>-13</sup>",
+            "4,22 × 10<sup>-9</sup>",
+            "1,10 × 10<sup>-12</sup>",
+            "5,49 × 10<sup>-13</sup>"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "name": "Ion común y precipitación",
+      "questions": [
+        {
+          "text": "Solubilidad del PbI<sub>2</sub> (K<sub>ps</sub> = 9,8 × 10<sup>-9</sup>) en una disolución de NaI 0,10 M:",
+          "answers": [
+            "9,80 × 10<sup>-7</sup> mol L<sup>-1</sup>",
+            "1,35 × 10<sup>-3</sup> mol L<sup>-1</sup>",
+            "2,45 × 10<sup>-7</sup> mol L<sup>-1</sup>",
+            "9,80 × 10<sup>-8</sup> mol L<sup>-1</sup>"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "Solubilidad del BaSO<sub>4</sub> (K<sub>ps</sub> = 1,1 × 10<sup>-10</sup>) en una disolución de Na<sub>2</sub>SO<sub>4</sub> 0,010 M:",
+          "answers": [
+            "1,05 × 10<sup>-5</sup> mol L<sup>-1</sup>",
+            "1,10 × 10<sup>-6</sup> mol L<sup>-1</sup>",
+            "1,10 × 10<sup>-8</sup> mol L<sup>-1</sup>",
+            "1,10 × 10<sup>-12</sup> mol L<sup>-1</sup>"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué [Pb<sup>2+</sup>] hace falta para que empiece a precipitar PbI<sub>2</sub> (K<sub>ps</sub> = 9,8 × 10<sup>-9</sup>) si [I<sup>-</sup>] = 0,010 M?",
+          "answers": [
+            "9,80 × 10<sup>-9</sup> mol L<sup>-1</sup>",
+            "9,80 × 10<sup>-5</sup> mol L<sup>-1</sup>",
+            "9,80 × 10<sup>-7</sup> mol L<sup>-1</sup>",
+            "4,90 × 10<sup>-5</sup> mol L<sup>-1</sup>"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "Se mezclan 10 mL de Pb(NO<sub>3</sub>)<sub>2</sub> 0,010 M y 10 mL de KI 0,010 M. ¿Precipita PbI<sub>2</sub>? (K<sub>ps</sub> = 9,8 × 10<sup>-9</sup>)",
+          "answers": [
+            "No: Q = 1,0 × 10<sup>-6</sup> < K<sub>ps</sub>",
+            "Sí: Q = 2,5 × 10<sup>-5</sup> > K<sub>ps</sub>",
+            "No: Q = 1,25 × 10<sup>-7</sup> < K<sub>ps</sub>",
+            "Sí: Q = 1,25 × 10<sup>-7</sup> > K<sub>ps</sub>"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Qué [Ag<sup>+</sup>] hace falta para que empiece a precipitar AgCl (K<sub>ps</sub> = 1,8 × 10<sup>-10</sup>) en una disolución con [Cl<sup>-</sup>] = 0,0010 M?",
+          "answers": [
+            "1,80 × 10<sup>-4</sup> mol L<sup>-1</sup>",
+            "1,80 × 10<sup>-13</sup> mol L<sup>-1</sup>",
+            "1,34 × 10<sup>-5</sup> mol L<sup>-1</sup>",
+            "1,80 × 10<sup>-7</sup> mol L<sup>-1</sup>"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  ]
+}

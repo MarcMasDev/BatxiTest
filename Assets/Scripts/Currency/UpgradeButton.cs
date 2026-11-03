@@ -11,6 +11,8 @@ public class UpgradeButton : MonoBehaviour
     [SerializeField] private TMP_Text levelText;
     [SerializeField] private TMP_Text priceText;
 
+    [SerializeField] private GameObject[] upgradable;
+
     private void Awake()
     {
         button.onClick.AddListener(Buy);
@@ -43,8 +45,16 @@ public class UpgradeButton : MonoBehaviour
         int price = Upgrades.GetPrice(upgrade, balance);
         Currency currency = Upgrades.GetCurrency(upgrade);
 
-        levelText.text = "Nv. " + Upgrades.GetLevel(upgrade);
+        levelText.text = Upgrades.GetLevel(upgrade).ToString();
         priceText.text = NumberFormat.Short(price);
-        button.interactable = Currencies.Get(currency) >= price;
+
+
+        bool canPurchase = Currencies.Get(currency) >= price;
+
+        button.interactable = canPurchase;
+        for (int i = 0; i < upgradable.Length; i++)
+        {
+            upgradable[i].SetActive(canPurchase);
+        }
     }
 }

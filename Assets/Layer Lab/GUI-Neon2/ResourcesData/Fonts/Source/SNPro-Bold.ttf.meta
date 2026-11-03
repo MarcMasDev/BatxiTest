@@ -1,0 +1,28 @@
+fileFormatVersion: 2
+guid: 4ef3278d9bd0a4a6dada083ed7b95ead
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - SN Pro
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 290592
+  packageName: GUI - Neon2
+  packageVersion: 1.0.4
+  assetPath: Assets/Layer Lab/GUI-Neon2/ResourcesData/Fonts/Source/SNPro-Bold.ttf
+  uploadId: 993904

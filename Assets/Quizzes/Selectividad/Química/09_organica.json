@@ -1,0 +1,430 @@
+{
+  "title": "PAU Química · Química orgánica y espectroscopía",
+  "levels": [
+    {
+      "name": "Grupos funcionales",
+      "questions": [
+        {
+          "text": "¿Qué grupo funcional tiene una cetona?",
+          "answers": [
+            "Un -COOH",
+            "Un C=O unido a dos carbonos",
+            "Un -OH",
+            "Un C=O unido a un H (al final de la cadena)"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué grupo funcional es -COOH?",
+          "answers": [
+            "Alcohol",
+            "Aldehído",
+            "Éster",
+            "Ácido carboxílico"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Qué grupo funcional es -CHO?",
+          "answers": [
+            "Éter",
+            "Ácido carboxílico",
+            "Aldehído",
+            "Cetona"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué grupo funcional es R-O-R'?",
+          "answers": [
+            "Alcohol",
+            "Éster",
+            "Éter",
+            "Cetona"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué grupo funcional es R-COO-R'?",
+          "answers": [
+            "Éter",
+            "Amida",
+            "Éster",
+            "Ácido carboxílico"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué grupo funcional es -NH<sub>2</sub>?",
+          "answers": [
+            "Nitro",
+            "Amina",
+            "Amida",
+            "Nitrilo"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "name": "Nomenclatura",
+      "questions": [
+        {
+          "text": "¿Cómo se llama CH<sub>3</sub>-CH<sub>2</sub>-CH<sub>2</sub>OH?",
+          "answers": [
+            "Propanal",
+            "Propanona",
+            "Propan-1-ol",
+            "Propan-2-ol"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Cómo se llama CH<sub>3</sub>-CO-CH<sub>3</sub>?",
+          "answers": [
+            "Propan-2-ol",
+            "Propanal",
+            "Ácido propanoico",
+            "Propanona (acetona)"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Cómo se llama CH<sub>3</sub>-COOH?",
+          "answers": [
+            "Etanoato de metilo",
+            "Etanal",
+            "Ácido etanoico (acético)",
+            "Etanol"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Cómo se llama CH<sub>2</sub>=CH-CH<sub>3</sub>?",
+          "answers": [
+            "Ciclopropano",
+            "Propano",
+            "Propino",
+            "Propeno"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Cómo se llama CH<sub>3</sub>-CH(CH<sub>3</sub>)-CH<sub>3</sub>?",
+          "answers": [
+            "Butano",
+            "2-metilbutano",
+            "Propano",
+            "Metilpropano"
+          ],
+          "correct": 3
+        }
+      ]
+    },
+    {
+      "name": "Isomería estructural",
+      "questions": [
+        {
+          "text": "¿Qué son los isómeros?",
+          "answers": [
+            "Moléculas idénticas",
+            "Compuestos con la misma estructura y distinta fórmula",
+            "Átomos del mismo elemento con distinto número de neutrones",
+            "Compuestos con la misma fórmula molecular y distinta estructura"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "El etanol (CH<sub>3</sub>CH<sub>2</sub>OH) y el éter dimetílico (CH<sub>3</sub>OCH<sub>3</sub>) son isómeros de...",
+          "answers": [
+            "geometría (cis-trans)",
+            "cadena",
+            "posición",
+            "función"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "El butan-1-ol y el butan-2-ol son isómeros de...",
+          "answers": [
+            "geometría (cis-trans)",
+            "función",
+            "cadena",
+            "posición"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Cuál de estos es un isómero de cadena del butan-1-ol?",
+          "answers": [
+            "Butan-2-ol",
+            "Dietil éter",
+            "2-metilpropan-1-ol",
+            "Butanal"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "El propanal y la propanona son isómeros de...",
+          "answers": [
+            "posición",
+            "función",
+            "No son isómeros",
+            "cadena"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "name": "Estereoisomería",
+      "questions": [
+        {
+          "text": "¿Qué es un carbono quiral (asimétrico)?",
+          "answers": [
+            "Un carbono con un doble enlace",
+            "Cualquier carbono de un anillo",
+            "Un carbono unido a tres hidrógenos",
+            "Un carbono unido a cuatro sustituyentes distintos"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Qué hace falta para que haya isomería cis-trans?",
+          "answers": [
+            "Un doble enlace C=C con dos sustituyentes distintos en cada carbono",
+            "Un triple enlace",
+            "Un grupo -OH",
+            "Un carbono quiral"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Cuántos isómeros tiene el dicloroeteno (C<sub>2</sub>H<sub>2</sub>Cl<sub>2</sub>)?",
+          "answers": [
+            "3: 1,1-dicloroeteno, cis-1,2-dicloroeteno y trans-1,2-dicloroeteno",
+            "1",
+            "4",
+            "2: 1,1- y 1,2-dicloroeteno"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Algún isómero del tricloroetano presenta isomería óptica?",
+          "answers": [
+            "Sí, los dos",
+            "No: ningún carbono tiene cuatro sustituyentes distintos",
+            "Sí: el 1,1,2-tricloroetano",
+            "Sí: el 1,1,1-tricloroetano"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿El butan-2-ol presenta isomería óptica?",
+          "answers": [
+            "Sí: tiene un doble enlace",
+            "No: todos sus carbonos tienen dos H",
+            "No: no tiene doble enlace",
+            "Sí: el C2 está unido a H, OH, CH<sub>3</sub> y C<sub>2</sub>H<sub>5</sub>"
+          ],
+          "correct": 3
+        }
+      ]
+    },
+    {
+      "name": "Reacciones orgánicas",
+      "questions": [
+        {
+          "text": "C<sub>2</sub>H<sub>2</sub> + HCl → CH<sub>2</sub>=CHCl. ¿Qué tipo de reacción es?",
+          "answers": [
+            "Adición",
+            "Condensación",
+            "Sustitución",
+            "Eliminación"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "CH<sub>4</sub> + Cl<sub>2</sub> (luz) → CH<sub>3</sub>Cl + HCl. ¿Qué tipo de reacción es?",
+          "answers": [
+            "Adición",
+            "Sustitución",
+            "Condensación",
+            "Eliminación"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "Al calentar ciclohexanol con H<sub>2</sub>SO<sub>4</sub> se obtiene ciclohexeno. ¿Qué tipo de reacción es?",
+          "answers": [
+            "Oxidación",
+            "Adición",
+            "Sustitución",
+            "Eliminación (deshidratación)"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "Ácido acético + etanol → acetato de etilo + agua. ¿Qué tipo de reacción es?",
+          "answers": [
+            "Adición",
+            "Condensación (esterificación)",
+            "Combustión",
+            "Eliminación"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "El etanol, con un oxidante fuerte, se transforma en ácido acético. ¿Qué tipo de reacción es?",
+          "answers": [
+            "Adición",
+            "Oxidación",
+            "Reducción",
+            "Eliminación"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "name": "Polímeros",
+      "questions": [
+        {
+          "text": "¿Cómo se forma un polímero de adición, como el PVC o el polietileno?",
+          "answers": [
+            "Monómeros con un doble enlace C=C se unen sin perder ninguna molécula",
+            "Por fermentación",
+            "Monómeros con dos grupos funcionales se unen liberando agua",
+            "Por combustión del monómero"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Cómo se forma un polímero de condensación, como el PET?",
+          "answers": [
+            "Por adición de HCl",
+            "Abriendo dobles enlaces C=C sin perder ninguna molécula",
+            "Monómeros con dos grupos funcionales se unen liberando una molécula pequeña (como H<sub>2</sub>O)",
+            "Por electrólisis"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Cuál es el monómero del PVC?",
+          "answers": [
+            "Cloroeteno (cloruro de vinilo, CH<sub>2</sub>=CHCl)",
+            "Eteno",
+            "1,1,2-tricloroetano",
+            "Etino"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Cuál es el monómero del polietileno (HDPE)?",
+          "answers": [
+            "Etano",
+            "Eteno (CH<sub>2</sub>=CH<sub>2</sub>)",
+            "Etanol",
+            "Ácido tereftálico"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "El PET (polietileno tereftalato) es un...",
+          "answers": [
+            "poliéster, obtenido por condensación",
+            "polímero de adición del eteno",
+            "polímero natural",
+            "polialqueno"
+          ],
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "name": "Espectroscopía (IR y masas)",
+      "questions": [
+        {
+          "text": "¿Qué se representa en el eje de abscisas de un espectro de masas?",
+          "answers": [
+            "La relación masa/carga (m/z)",
+            "El número de onda (cm<sup>-1</sup>)",
+            "La longitud de onda",
+            "La abundancia relativa"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué información da el pico del ion molecular?",
+          "answers": [
+            "El fragmento más abundante",
+            "Los grupos funcionales",
+            "El número de isómeros",
+            "La masa molecular del compuesto"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Qué es el pico base de un espectro de masas?",
+          "answers": [
+            "El primer pico por la izquierda",
+            "El pico del ion molecular, siempre",
+            "El pico más intenso: corresponde al fragmento más abundante (más estable)",
+            "El pico de mayor masa"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "Un espectro de masas tiene el ion molecular en m/z = 58. ¿Es etanol (C<sub>2</sub>H<sub>6</sub>O) o acetona (C<sub>3</sub>H<sub>6</sub>O)?",
+          "answers": [
+            "Etanol (M = 46)",
+            "No se puede saber",
+            "Los dos",
+            "Acetona (M = 58)"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "Un paquete contiene vitamina C (C<sub>6</sub>H<sub>8</sub>O<sub>6</sub>) o ácido cítrico (C<sub>6</sub>H<sub>8</sub>O<sub>7</sub>). El ion molecular sale en m/z = 192. ¿Qué es?",
+          "answers": [
+            "Vitamina C (M = 176)",
+            "Ácido cítrico (M = 192)",
+            "No se puede saber con este espectro",
+            "Una mezcla de los dos"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "En un espectro IR aparece una banda ancha entre 3 200 y 3 550 cm<sup>-1</sup>. ¿Qué enlace indica?",
+          "answers": [
+            "C-O",
+            "O-H (alcohol)",
+            "C-H",
+            "C=O"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "En un espectro IR, un pico intenso hacia 1 700 cm<sup>-1</sup> indica...",
+          "answers": [
+            "un enlace C-C",
+            "un enlace C=O (cetona, aldehído, ácido o éster)",
+            "un anillo aromático",
+            "un enlace O-H"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "De los picos IR a 3 300, 1 700 y 1 100 cm<sup>-1</sup>, ¿cuál corresponde a la radiación de mayor energía?",
+          "answers": [
+            "Todos tienen la misma energía",
+            "1 100 cm<sup>-1</sup>: es el más pequeño",
+            "1 700 cm<sup>-1</sup>: es el del medio",
+            "3 300 cm<sup>-1</sup>: la energía es proporcional al número de onda"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  ]
+}
