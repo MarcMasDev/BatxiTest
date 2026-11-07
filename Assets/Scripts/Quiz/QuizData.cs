@@ -26,4 +26,5 @@ public class QuestionData
     public string text = "";
     public List<string> answers = new List<string>();
     public int correct;
+    public string explanation = ""; //Opcional: por qué es la correcta. Se enseña al fallar
 }

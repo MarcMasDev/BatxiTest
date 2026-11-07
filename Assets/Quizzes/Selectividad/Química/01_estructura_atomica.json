@@ -12,7 +12,8 @@
             "El átomo es una esfera positiva con los electrones incrustados",
             "Los electrones son ondas sin posición definida"
           ],
-          "correct": 0
+          "correct": 0,
+          "explanation": "Bohr dijo que el electrón solo puede estar en órbitas con energías fijas y que absorbe o emite energía al saltar entre ellas. El núcleo con casi toda la masa es de Rutherford, y la esfera positiva con electrones incrustados, de Thomson."
         },
         {
           "text": "Según el modelo mecanocuántico, un orbital atómico es...",
@@ -22,7 +23,8 @@
             "Una trayectoria elíptica del electrón alrededor del núcleo",
             "Una órbita circular de radio fijo por la que se mueve el electrón"
           ],
-          "correct": 1
+          "correct": 1,
+          "explanation": "Un orbital no es un camino del electrón: es la zona donde es muy probable encontrarlo. Las órbitas de radio fijo eran del modelo de Bohr, que el modelo mecanocuántico sustituye."
         },
         {
           "text": "¿Cuántos electrones puede contener como máximo un orbital?",
@@ -32,7 +34,8 @@
             "Depende del número cuántico l",
             "2, con el mismo espín"
           ],
-          "correct": 0
+          "correct": 0,
+          "explanation": "Principio de exclusión de Pauli: dos electrones del mismo átomo no pueden tener los cuatro números cuánticos iguales. En un orbital n, l y m<sub>l</sub> ya coinciden, así que solo caben 2 y con espines opuestos."
         },
         {
           "text": "¿Qué dice la regla de Hund?",
@@ -42,7 +45,8 @@
             "Dos electrones de un átomo no pueden tener los cuatro números cuánticos iguales",
             "Los orbitales se llenan por orden creciente de energía"
           ],
-          "correct": 1
+          "correct": 1,
+          "explanation": "Hund: en orbitales de la misma energía (por ejemplo, los tres 2p) los electrones se reparten primero de uno en uno con el mismo espín, y después se aparean. Lo de los cuatro números cuánticos es Pauli y el orden de llenado es Aufbau."
         },
         {
           "text": "¿Qué valores puede tener el número cuántico l si n = 3?",
@@ -52,7 +56,8 @@
             "0, 1 y 2",
             "0, 1, 2 y 3"
           ],
-          "correct": 2
+          "correct": 2,
+          "explanation": "l va de 0 a n - 1. Con n = 3, l puede ser 0 (s), 1 (p) o 2 (d). Los valores -1, 0 y +1 son los de m<sub>l</sub> cuando l = 1."
         },
         {
           "text": "¿Cuántos orbitales hay en una subcapa d?",
@@ -62,7 +67,8 @@
             "3",
             "5"
           ],
-          "correct": 3
+          "correct": 3,
+          "explanation": "En una subcapa d, l = 2 y m<sub>l</sub> va de -2 a +2: son 5 valores, así que 5 orbitales. El 10 es la trampa: son los electrones que caben (2 por orbital)."
         },
         {
           "text": "¿Qué combinación de números cuánticos (n, l, m<sub>l</sub>, m<sub>s</sub>) es posible?",
@@ -72,7 +78,8 @@
             "(3, 1, -2, -1/2)",
             "(3, 2, -1, +1/2)"
           ],
-          "correct": 3
+          "correct": 3,
+          "explanation": "Reglas: l va de 0 a n - 1, m<sub>l</sub> de -l a +l y m<sub>s</sub> solo puede ser +1/2 o -1/2. (2, 2, ...) falla porque l no puede valer n, (1, 0, 0, 0) porque m<sub>s</sub> no puede ser 0 y (3, 1, -2, ...) porque con l = 1, m<sub>l</sub> no llega a -2."
         }
       ]
     },

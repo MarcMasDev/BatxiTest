@@ -45,9 +45,9 @@ public class UpgradeButton : MonoBehaviour
         int price = Upgrades.GetPrice(upgrade, balance);
         Currency currency = Upgrades.GetCurrency(upgrade);
 
-        levelText.text = Upgrades.GetLevel(upgrade).ToString();
+        int level = Upgrades.GetLevel(upgrade);
+        levelText.text = level.ToString();
         priceText.text = NumberFormat.Short(price);
-
 
         bool canPurchase = Currencies.Get(currency) >= price;
 

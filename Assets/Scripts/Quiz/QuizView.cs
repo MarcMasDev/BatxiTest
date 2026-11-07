@@ -21,8 +21,13 @@ public class QuizView : MonoBehaviour
 
     [SerializeField] private QuizCard resultCard;
 
+    [Header("Feedback al responder")]
     [SerializeField] private Color correctColor = Color.green;
     [SerializeField] private Color wrongColor = Color.red;
+    [SerializeField] private Image nextBackground;
+    [SerializeField] private TMP_Text nextLabel;
+    [SerializeField] private GameObject explanationPanel;
+    [SerializeField] private TMP_Text explanationText;
 
     [Header("Recompensas (se dan al terminar el nivel)")]
     [SerializeField] private ProgressionBalance balance;
@@ -37,9 +42,11 @@ public class QuizView : MonoBehaviour
     private int correctCount;
     private List<Button> answerButtons = new List<Button>();
     private List<int> shownOrder = new List<int>();
+    private Color nextColor; //Color original del botón Siguiente (cuando se falla se queda así)
 
     private void Start()
     {
+        nextColor = nextBackground.color;
         nextButton.onClick.AddListener(NextQuestion);
         menuButton.onClick.AddListener(QuizLauncher.ReturnToMenu);
         nextButton.gameObject.SetActive(false);
@@ -92,12 +99,13 @@ public class QuizView : MonoBehaviour
 
         Shuffle(shownOrder); //Las respuestas se muestran en orden aleatorio
 
-        foreach (int answerIndex in shownOrder)
+        for (int i = 0; i < shownOrder.Count; i++)
         {
+            int answerIndex = shownOrder[i];
             Button button = Instantiate(answerButtonPrefab, answersContainer);
             QuizQuestion answerText = button.GetComponentInChildren<QuizQuestion>();
             answerText.question.text = question.answers[answerIndex];
-            answerText.letter.text = GetLetter(answerIndex).ToString();
+            answerText.letter.text = GetLetter(i).ToString(); //La letra va por posición: siempre A, B, C, D de arriba a abajo
             button.onClick.AddListener(() => Answer(question, answerIndex));
             answerButtons.Add(button);
         }
@@ -105,14 +113,30 @@ public class QuizView : MonoBehaviour
 
     private void Answer(QuestionData question, int answerIndex)
     {
-        if (answerIndex == question.correct) correctCount++;
+        bool correct = answerIndex == question.correct;
+        if (correct) correctCount++;
 
-        //La correcta en verde y, si se ha fallado, la pulsada en rojo
+        //La pulsada en verde (salta) o en rojo (tiembla), la correcta siempre en verde y el resto apagadas
         for (int i = 0; i < answerButtons.Count; i++)
         {
-            if (shownOrder[i] == question.correct) Paint(answerButtons[i], correctColor);
-            else if (shownOrder[i] == answerIndex) Paint(answerButtons[i], wrongColor);
+            QuizQuestion answer = answerButtons[i].GetComponentInChildren<QuizQuestion>();
             answerButtons[i].interactable = false; //Solo se puede responder una vez
+
+            if (shownOrder[i] == question.correct) answer.ShowCorrect(correctColor, correct ? 0f : 0.35f); //Si has fallado, salta después del temblor para que la mires
+            else if (shownOrder[i] == answerIndex) answer.ShowWrong(wrongColor);
+            else answer.Dim();
+        }
+
+        //El botón de Siguiente también lo dice
+        char correctLetter = GetLetter(shownOrder.IndexOf(question.correct));
+        nextLabel.text = correct ? "¡Correcto!  <size=70%>Siguiente</size>" : "Era la " + correctLetter + "  <size=70%>Siguiente</size>";
+        nextBackground.color = correct ? correctColor : nextColor;
+
+        //Al fallar, la explicación (si el quiz la trae) para aprender el porqué
+        if (!correct && !string.IsNullOrEmpty(question.explanation))
+        {
+            explanationText.text = "<color=#FFD447>¿Por qué?</color> " + question.explanation;
+            explanationPanel.SetActive(true);
         }
 
         nextButton.gameObject.SetActive(true);
@@ -157,15 +181,9 @@ public class QuizView : MonoBehaviour
         foreach (Button button in answerButtons) Destroy(button.gameObject);
         answerButtons.Clear();
         shownOrder.Clear();
+        explanationPanel.SetActive(false);
     }
 
-
-    private void Paint(Button button, Color color)
-    {
-        ColorBlock colors = button.colors;
-        colors.disabledColor = color;
-        button.colors = colors;
-    }
 
     private void Shuffle(List<int> list)
     {

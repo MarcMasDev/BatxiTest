@@ -88,6 +88,8 @@ GameObject:
   - component: {fileID: 4060471704792397686}
   - component: {fileID: 7379948460080581595}
   - component: {fileID: 7091811600361550191}
+  - component: {fileID: 47572525647683668}
+  - component: {fileID: 3295353919430244383}
   m_Layer: 0
   m_Name: Answer
   m_TagString: Untagged
@@ -132,6 +134,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   letter: {fileID: 4148247431890560821}
   question: {fileID: 5352436459533735231}
+  background: {fileID: 5733103874266697077}
+  group: {fileID: 3295353919430244383}
+  feel: {fileID: 47572525647683668}
 --- !u!114 &4060471704792397686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -214,6 +219,35 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &47572525647683668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4398093813064275578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd8d7561f5b72444e89106f77c840af3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonFeel
+  button: {fileID: 4060471704792397686}
+  pressedScale: 0.95
+  stiffness: 800
+  damping: 12
+  squash: 0.5
+--- !u!225 &3295353919430244383
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4398093813064275578}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &5115210208320623618
 GameObject:
   m_ObjectHideFlags: 0
@@ -382,8 +416,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

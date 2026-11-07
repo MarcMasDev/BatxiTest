@@ -30,6 +30,14 @@ public static class Upgrades
         return balance.GetMachineCost(upgrade).Evaluate(level);
     }
 
+    //Lo que da una mejora en un nivel: inteligencia o monedas por acierto, o fuerza por segundo de la máquina
+    public static int GetGain(Upgrade upgrade, int level, ProgressionBalance balance)
+    {
+        if (upgrade == Upgrade.Brain) return balance.brainPerAnswer.Evaluate(level);
+        if (upgrade == Upgrade.Coins) return balance.coinsPerAnswer.Evaluate(level);
+        return balance.GetMachineStrength(upgrade).Evaluate(level);
+    }
+
     public static bool TryBuy(Upgrade upgrade, ProgressionBalance balance)
     {
         int price = GetPrice(upgrade, balance);
