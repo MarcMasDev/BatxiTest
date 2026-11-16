@@ -29,18 +29,18 @@ public class QuizView : MonoBehaviour
     [SerializeField] private GameObject explanationPanel;
     [SerializeField] private TMP_Text explanationText;
 
-    [Header("Recompensas (se dan al terminar el nivel)")]
+    [Header("Recompensas (se dan al terminar el intento)")]
     [SerializeField] private ProgressionBalance balance;
 
-    [Tooltip("Se lanza al terminar el nivel.")]
+    [Tooltip("Se lanza al terminar el intento.")]
     [SerializeField] private UnityEvent onLevelCompleted;
 
     private QuizData quiz;
-    private LevelData level;
-    private int levelIndex;
+    private bool spaced; //Repaso espaciado (cuenta y da monedas) o práctica extra (solo inteligencia)
     private int questionIndex;
     private int correctCount;
     private List<Button> answerButtons = new List<Button>();
+    private List<int> questionOrder = new List<int>();
     private List<int> shownOrder = new List<int>();
     private Color nextColor; //Color original del botón Siguiente (cuando se falla se queda así)
 
@@ -63,21 +63,25 @@ public class QuizView : MonoBehaviour
 
         titleText.text = quiz.title;
 
-        //El nivel que toca. Si ya están todos hechos, se acaba aquí
-        levelIndex = QuizProgress.GetLevelsCompleted(quiz);
-        if (levelIndex >= quiz.levels.Count)
+        //Si ya ha pasado la espera es un repaso espaciado. Si no, práctica extra
+        spaced = QuizProgress.IsSpacedAvailable(quiz);
+        levelText.text = GetAttemptName();
+
+        for (int i = 0; i < quiz.questions.Count; i++)
         {
-            levelText.text = "";
-            progressText.text = "";
-            progressSlider.gameObject.SetActive(false);
-            questionText.text = "¡Quiz completado!";
-            ShowEndButtons();
-            return;
+            questionOrder.Add(i);
         }
 
-        level = quiz.levels[levelIndex];
-        levelText.text = level.name;
+        Shuffle(questionOrder); //Las mismas preguntas en cada intento, pero en otro orden
+
         ShowQuestion();
+    }
+
+    private string GetAttemptName()
+    {
+        if (!spaced) return "Práctica extra";
+        if (QuizProgress.IsCompleted(quiz, balance)) return "Repaso";
+        return "Repaso " + (QuizProgress.GetSpacedAttempts(quiz) + 1) + " / " + balance.repetitionsToComplete;
     }
 
     //Enseña la pregunta actual con un botón por respuesta
@@ -86,9 +90,9 @@ public class QuizView : MonoBehaviour
         ClearAnswers();
         nextButton.gameObject.SetActive(false);
 
-        QuestionData question = level.questions[questionIndex];
-        progressText.text = (questionIndex + 1) + " / " + level.questions.Count;
-        progressSlider.maxValue = level.questions.Count;
+        QuestionData question = quiz.questions[questionOrder[questionIndex]];
+        progressText.text = (questionIndex + 1) + " / " + quiz.questions.Count;
+        progressSlider.maxValue = quiz.questions.Count;
         progressSlider.value = questionIndex + 1;
         questionText.text = question.text;
 
@@ -132,8 +136,8 @@ public class QuizView : MonoBehaviour
         nextLabel.text = correct ? "¡Correcto!  <size=70%>Siguiente</size>" : "Era la " + correctLetter + "  <size=70%>Siguiente</size>";
         nextBackground.color = correct ? correctColor : nextColor;
 
-        //Al fallar, la explicación (si el quiz la trae) para aprender el porqué
-        if (!correct && !string.IsNullOrEmpty(question.explanation))
+        //La explicación (si el quiz la trae), aciertes o falles, para aprender el porqué
+        if (!string.IsNullOrEmpty(question.explanation))
         {
             explanationText.text = "<color=#FFD447>¿Por qué?</color> " + question.explanation;
             explanationPanel.SetActive(true);
@@ -145,27 +149,30 @@ public class QuizView : MonoBehaviour
     private void NextQuestion()
     {
         questionIndex++;
-        if (questionIndex < level.questions.Count) ShowQuestion();
-        else FinishLevel();
+        if (questionIndex < quiz.questions.Count) ShowQuestion();
+        else FinishAttempt();
     }
 
-    private void FinishLevel()
+    private void FinishAttempt()
     {
         ClearAnswers();
         nextButton.gameObject.SetActive(false);
 
-        QuizProgress.CompleteLevel(quiz, levelIndex);
-
-        //Recompensas
+        //Recompensas: la inteligencia siempre, las monedas solo en un repaso espaciado
         int brain = balance.brainPerAnswer.Evaluate(Upgrades.GetLevel(Upgrade.Brain)) * correctCount;
-        int coins = balance.coinsPerLevel + balance.coinsPerAnswer.Evaluate(Upgrades.GetLevel(Upgrade.Coins)) * correctCount;
+        int coins = spaced ? balance.coinsPerAttempt.Evaluate(Upgrades.GetLevel(Upgrade.Coins)) : 0;
         Currencies.Add(Currency.Brain, brain);
         Currencies.Add(Currency.Coins, coins);
+
+        //El repaso cuenta para completar el quiz y vuelve a empezar la espera
+        if (spaced) QuizProgress.FinishSpacedAttempt(quiz, correctCount, balance);
         onLevelCompleted.Invoke();
+
+        string rewards = spaced ? "+" + brain + " inteligencia   +" + coins + " monedas" : "+" + brain + " inteligencia (la práctica extra no da monedas)";
 
         progressText.text = "";
         progressSlider.gameObject.SetActive(false);
-        questionText.text = level.name + " completado\n" + correctCount + " / " + level.questions.Count + " correctas\n" + "+" + brain + " inteligencia   +" + coins + " monedas";
+        questionText.text = levelText.text + " terminado\n" + correctCount + " / " + quiz.questions.Count + " correctas\n" + rewards;
         ShowEndButtons();
     }
 

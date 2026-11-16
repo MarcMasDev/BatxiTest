@@ -34,9 +34,9 @@ public static class QuizSerializer
             string json = text.StartsWith("{") ? text : ShareCodeToJson(text);
 
             QuizData quiz = JsonUtility.FromJson<QuizData>(json);
-            if (quiz == null || quiz.levels.Count == 0)
+            if (quiz == null || quiz.questions.Count == 0)
             {
-                Debug.LogError("El quiz no tiene niveles.");
+                Debug.LogError("El quiz no tiene preguntas.");
                 return null;
             }
             return quiz;

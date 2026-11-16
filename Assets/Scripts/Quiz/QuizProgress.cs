@@ -1,29 +1,74 @@
+using System;
 using UnityEngine;
 
+//Progreso de cada quiz: cuántos repasos espaciados se han hecho, su nota y cuándo toca el siguiente
 public static class QuizProgress
 {
-    public static int GetLevelsCompleted(QuizData quiz)
+    public static int GetSpacedAttempts(QuizData quiz)
     {
-        return PlayerPrefs.GetInt(Key(quiz), 0); //0 si nunca se ha jugado
+        return PlayerPrefs.GetInt(Key(quiz) + "_Attempts", 0); //0 si nunca se ha jugado
     }
 
-    public static void CompleteLevel(QuizData quiz, int levelIndex)
+    //Aciertos de un repaso espaciado (el primero es el 0)
+    public static int GetScore(QuizData quiz, int attempt)
     {
-        int completed = levelIndex + 1;
-        if (completed > GetLevelsCompleted(quiz)) //Así repetir un nivel anterior no hace retroceder el progreso
-        {
-            PlayerPrefs.SetInt(Key(quiz), completed);
-            PlayerPrefs.Save();
-        }
+        return PlayerPrefs.GetInt(Key(quiz) + "_Score" + attempt, 0);
+    }
+
+    public static bool IsCompleted(QuizData quiz, ProgressionBalance balance)
+    {
+        return GetSpacedAttempts(quiz) >= balance.repetitionsToComplete;
+    }
+
+    //Segundos que faltan para el siguiente repaso espaciado. 0 = ya toca
+    public static long SecondsUntilSpaced(QuizData quiz)
+    {
+        long next = long.Parse(PlayerPrefs.GetString(Key(quiz) + "_NextTime", "0"));
+        return Math.Max(0, next - Now());
+    }
+
+    public static bool IsSpacedAvailable(QuizData quiz)
+    {
+        return SecondsUntilSpaced(quiz) == 0;
+    }
+
+    //Guarda la nota, suma el repaso y vuelve a empezar la espera
+    public static void FinishSpacedAttempt(QuizData quiz, int score, ProgressionBalance balance)
+    {
+        int attempts = GetSpacedAttempts(quiz);
+        long cooldown = (long)(GetCooldownHours(quiz, balance) * 3600);
+
+        PlayerPrefs.SetInt(Key(quiz) + "_Score" + attempts, score);
+        PlayerPrefs.SetInt(Key(quiz) + "_Attempts", attempts + 1);
+        PlayerPrefs.SetString(Key(quiz) + "_NextTime", (Now() + cooldown).ToString());
+        PlayerPrefs.Save();
+    }
+
+    //La espera la pone el profesor en el quiz. Si no la pone (o es 0), se usa la del balance
+    public static float GetCooldownHours(QuizData quiz, ProgressionBalance balance)
+    {
+        return quiz.cooldownHours > 0 ? quiz.cooldownHours : balance.defaultCooldownHours;
     }
 
     public static void Reset(QuizData quiz)
     {
-        PlayerPrefs.DeleteKey(Key(quiz));
+        int attempts = GetSpacedAttempts(quiz);
+        for (int i = 0; i < attempts; i++)
+        {
+            PlayerPrefs.DeleteKey(Key(quiz) + "_Score" + i);
+        }
+        PlayerPrefs.DeleteKey(Key(quiz) + "_Attempts");
+        PlayerPrefs.DeleteKey(Key(quiz) + "_NextTime");
+    }
+
+    //Segundos desde 1970 (UTC), igual que el AFK del gym: funciona aunque el juego esté cerrado
+    private static long Now()
+    {
+        return DateTimeOffset.UtcNow.ToUnixTimeSeconds();
     }
 
     private static string Key(QuizData quiz)
     {
-        return "QuizLevelsCompleted_" + quiz.title + "_" + quiz.created;
+        return "Quiz_" + quiz.title + "_" + quiz.created;
     }
 }

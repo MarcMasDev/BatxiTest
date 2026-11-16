@@ -10,13 +10,7 @@ public class QuizData
 {
     public string title = "";
     public string created = "";
-    public List<LevelData> levels = new List<LevelData>();
-}
-
-[Serializable]
-public class LevelData
-{
-    public string name = "";
+    public float cooldownHours; //Espera entre repasos espaciados. Lo pone el profesor; 0 = la del balance
     public List<QuestionData> questions = new List<QuestionData>();
 }
 
@@ -26,5 +20,5 @@ public class QuestionData
     public string text = "";
     public List<string> answers = new List<string>();
     public int correct;
-    public string explanation = ""; //Opcional: por qué es la correcta. Se enseña al fallar
+    public string explanation = ""; //Opcional: por qué es la correcta. Se enseña al responder
 }

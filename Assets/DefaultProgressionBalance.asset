@@ -12,13 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 552dbf88c3315b34586eebf02e6f53ea, type: 3}
   m_Name: DefaultProgressionBalance
   m_EditorClassIdentifier: Assembly-CSharp::ProgressionBalance
-  coinsPerLevel: 20
+  coinsPerAttempt:
+    baseValue: 20
+    growth: 1.2
   brainPerAnswer:
     baseValue: 10
     growth: 1.2
-  coinsPerAnswer:
-    baseValue: 5
-    growth: 1.2
+  defaultCooldownHours: 20
+  repetitionsToComplete: 3
   strengthUpgradeCost:
     baseValue: 100
     growth: 1.6

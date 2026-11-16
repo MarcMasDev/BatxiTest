@@ -41,7 +41,7 @@ public class CharacterLevelDisplay : MonoBehaviour
             toReach = balance.brainToLevelUp.Evaluate(level);
         }
 
-        levelText.text = "Nv. " + level;
+        levelText.text = level.ToString();
         progressSlider.maxValue = toReach;
         progressSlider.value = brain;
         progressText.text = NumberFormat.Short(brain) + " / " + NumberFormat.Short(toReach);

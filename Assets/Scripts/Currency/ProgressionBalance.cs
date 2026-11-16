@@ -6,9 +6,10 @@ using UnityEngine;
 public class ProgressionBalance : ScriptableObject
 {
     [Header("Quiz")]
-    public int coinsPerLevel = 20; //Monedas fijas al terminar un nivel del quiz
+    public GrowthCurve coinsPerAttempt = new GrowthCurve { baseValue = 20, growth = 1.2f }; //Monedas por repaso espaciado. Sube con la mejora de monedas
     public GrowthCurve brainPerAnswer = new GrowthCurve { baseValue = 10, growth = 1.2f };
-    public GrowthCurve coinsPerAnswer = new GrowthCurve { baseValue = 5, growth = 1.2f };
+    public float defaultCooldownHours = 20; //Espera entre repasos si el quiz no trae la suya
+    public int repetitionsToComplete = 3; //Repasos espaciados para completar un quiz
 
     [Header("Mejoras con fuerza")]
     public GrowthCurve strengthUpgradeCost = new GrowthCurve { baseValue = 100, growth = 1.6f };
