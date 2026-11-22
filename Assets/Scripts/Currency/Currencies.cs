@@ -3,7 +3,7 @@ using UnityEngine;
 
 public enum Currency
 {
-    Brain,
+    XP,
     Strength,
     Coins,
 }

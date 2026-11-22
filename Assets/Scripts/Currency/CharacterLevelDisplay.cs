@@ -24,12 +24,12 @@ public class CharacterLevelDisplay : MonoBehaviour
 
     private void OnCurrencyChanged(Currency changed)
     {
-        if (changed == Currency.Brain) Refresh();
+        if (changed == Currency.XP) Refresh();
     }
 
     private void Refresh()
     {
-        int brain = Currencies.Get(Currency.Brain);
+        int brain = Currencies.Get(Currency.XP);
         int level = 0;
         int toReach = balance.brainToLevelUp.Evaluate(level);
 

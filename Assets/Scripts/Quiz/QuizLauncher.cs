@@ -8,6 +8,8 @@ public static class QuizLauncher
 
     public static void Play(QuizData quiz)
     {
+        if (!QuizProgress.IsSpacedAvailable(quiz)) return; //Mientras dura la espera el quiz no se puede jugar
+
         SelectedQuiz = quiz;
         SceneManager.LoadScene(QuizSceneName);
     }

@@ -16,6 +16,7 @@ public class QuizCard : MonoBehaviour
     [SerializeField] private TMP_Text progressText;
 
     [SerializeField] private CanvasGroup rewards;
+    [SerializeField] private Reward coinsReward; //Monedas que da el siguiente repaso
     [SerializeField] private TMP_Text statusText;
     [SerializeField] private TMP_Text timerText;
     
@@ -77,7 +78,8 @@ public class QuizCard : MonoBehaviour
             int coins = balance.coinsPerAttempt.Evaluate(Upgrades.GetLevel(Upgrade.Coins));
             timerText.text = "";
             rewards.alpha = 1;
-            statusText.text = NumberFormat.Short(coins);
+            coinsReward.SetAmount(coins);
+            statusText.text = "";
         }
         else
         {
