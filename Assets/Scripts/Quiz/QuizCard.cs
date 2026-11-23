@@ -17,10 +17,10 @@ public class QuizCard : MonoBehaviour
 
     [SerializeField] private CanvasGroup rewards;
     [SerializeField] private Reward coinsReward; //Monedas que da el siguiente repaso
-    [SerializeField] private TMP_Text statusText;
     [SerializeField] private TMP_Text timerText;
     
     [SerializeField] private Button playButton;
+    [SerializeField] private GameObject playButtonVisuals;
     [SerializeField] private GameObject completedMark;
 
     private QuizData quiz;
@@ -79,12 +79,13 @@ public class QuizCard : MonoBehaviour
             timerText.text = "";
             rewards.alpha = 1;
             coinsReward.SetAmount(coins);
-            statusText.text = "";
+            playButtonVisuals.gameObject.SetActive(true);
         }
         else
         {
             rewards.alpha = 0;
-            statusText.text = "Próximo repaso en " + FormatTime(seconds);
+            playButtonVisuals.gameObject.SetActive(false);
+            timerText.text = "Próximo repaso en " + FormatTime(seconds);
         }
     }
 
