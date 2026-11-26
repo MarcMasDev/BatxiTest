@@ -167,9 +167,10 @@ public class QuizView : MonoBehaviour
         ClearAnswers();
         nextButton.gameObject.SetActive(false);
 
-        //Recompensas: inteligencia por acierto y monedas por repaso
-        int brain = balance.brainPerAnswer.Evaluate(Upgrades.GetLevel(Upgrade.Brain)) * correctCount;
-        int coins = balance.coinsPerAttempt.Evaluate(Upgrades.GetLevel(Upgrade.Coins));
+        //Recompensas: inteligencia por acierto y monedas por repaso. El repaso que completa el test da el doble
+        int multiplier = QuizProgress.GetRewardMultiplier(quiz, balance);
+        int brain = balance.brainPerAnswer.Evaluate(Upgrades.GetLevel(Upgrade.Brain)) * correctCount * multiplier;
+        int coins = balance.coinsPerAttempt.Evaluate(Upgrades.GetLevel(Upgrade.Coins)) * multiplier;
         Currencies.Add(Currency.XP, brain);
         Currencies.Add(Currency.Coins, coins);
 

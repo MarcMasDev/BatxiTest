@@ -20,6 +20,13 @@ public static class QuizProgress
         return GetSpacedAttempts(quiz) >= balance.repetitionsToComplete;
     }
 
+    //El siguiente repaso es el que completa el test: sus recompensas se multiplican. Si no, x1
+    public static int GetRewardMultiplier(QuizData quiz, ProgressionBalance balance)
+    {
+        bool completesTest = GetSpacedAttempts(quiz) + 1 == balance.repetitionsToComplete;
+        return completesTest ? balance.completionMultiplier : 1;
+    }
+
     //Segundos que faltan para el siguiente repaso espaciado. 0 = ya toca
     public static long SecondsUntilSpaced(QuizData quiz)
     {

@@ -11,7 +11,14 @@ public class UpgradeButton : MonoBehaviour
     [SerializeField] private TMP_Text levelText;
     [SerializeField] private TMP_Text priceText;
 
+    [Header("Lo que da ahora la mejora (opcional)")]
+    [SerializeField] private TMP_Text gainText;
+
     [SerializeField] private GameObject[] upgradable;
+
+    [Header("Bloqueo por nivel del personaje")]
+    [SerializeField] private GameObject lockedMark; 
+    [SerializeField] private TMP_Text requiredLevelText;
 
     private void Awake()
     {
@@ -34,7 +41,7 @@ public class UpgradeButton : MonoBehaviour
         Upgrades.TryBuy(upgrade, balance);
     }
 
-    //Cualquier cambio de dinero (o una compra) puede cambiar si el botón se puede pulsar
+    //Cualquier cambio de dinero, de inteligencia (nivel) o una compra puede cambiar si el botón se puede pulsar
     private void OnCurrencyChanged(Currency changed)
     {
         Refresh();
@@ -46,10 +53,19 @@ public class UpgradeButton : MonoBehaviour
         Currency currency = Upgrades.GetCurrency(upgrade);
 
         int level = Upgrades.GetLevel(upgrade);
-        levelText.text = level.ToString();
+        levelText.text = (level + 1).ToString(); //Se guarda desde 0, pero al jugador se le enseña desde el nivel 1
         priceText.text = NumberFormat.Short(price);
 
-        bool canPurchase = Currencies.Get(currency) >= price;
+        if (gainText != null)
+        {
+            gainText.text = Upgrades.GetGain(upgrade, level, balance).ToString();
+        }
+
+        bool unlocked = Upgrades.IsUnlocked(upgrade, balance);
+        bool canPurchase = unlocked && Currencies.Get(currency) >= price;
+
+        lockedMark.SetActive(!unlocked);
+        requiredLevelText.text = Upgrades.GetRequiredCharacterLevel(upgrade, balance).ToString();
 
         button.interactable = canPurchase;
         for (int i = 0; i < upgradable.Length; i++)

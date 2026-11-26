@@ -34,7 +34,15 @@ public class StrengthTrainer : MonoBehaviour
     private void GiveAfkStrength()
     {
         string lastSeen = PlayerPrefs.GetString(LastSeenKey, "");
-        if (lastSeen == "") return; //Primera vez que se abre el gym
+
+        //Primera vez que se abre el gym: no hay AFK, pero sí lo inicial para empezar a mejorar
+        if (lastSeen == "")
+        {
+            Currencies.Add(Currency.Strength, balance.startingStrength);
+            Currencies.Add(Currency.Coins, balance.startingCoins);
+            PlayerPrefs.SetString(LastSeenKey, Now().ToString()); //Así no se vuelve a dar si se sale antes del primer segundo
+            return;
+        }
 
         long seconds = Now() - long.Parse(lastSeen);
         seconds = Math.Min(seconds, (long)(balance.maxAfkHours * 3600));

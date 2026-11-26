@@ -30,15 +30,15 @@ public class CharacterLevelDisplay : MonoBehaviour
     private void Refresh()
     {
         int brain = Currencies.Get(Currency.XP);
-        int level = 0;
-        int toReach = balance.brainToLevelUp.Evaluate(level);
+        int level = 1; //El personaje empieza en el nivel 1
+        int toReach = balance.brainToLevelUp.Evaluate(level - 1);
 
         //Se resta lo de cada nivel superado; lo que sobra es el progreso del nivel actual
         while (toReach > 0 && brain >= toReach)
         {
             brain -= toReach;
             level++;
-            toReach = balance.brainToLevelUp.Evaluate(level);
+            toReach = balance.brainToLevelUp.Evaluate(level - 1);
         }
 
         levelText.text = level.ToString();

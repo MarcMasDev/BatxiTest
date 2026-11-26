@@ -17,6 +17,7 @@ public class QuizCard : MonoBehaviour
 
     [SerializeField] private CanvasGroup rewards;
     [SerializeField] private Reward coinsReward; //Monedas que da el siguiente repaso
+    [SerializeField] private Reward xpReward; //Inteligencia por cada pregunta acertada
     [SerializeField] private TMP_Text timerText;
     
     [SerializeField] private Button playButton;
@@ -75,10 +76,13 @@ public class QuizCard : MonoBehaviour
 
         if (seconds == 0)
         {
-            int coins = balance.coinsPerAttempt.Evaluate(Upgrades.GetLevel(Upgrade.Coins));
+            int multiplier = QuizProgress.GetRewardMultiplier(quiz, balance); //x2 si este repaso completa el test
+            int coins = balance.coinsPerAttempt.Evaluate(Upgrades.GetLevel(Upgrade.Coins)) * multiplier;
+            int xpPerAnswer = balance.brainPerAnswer.Evaluate(Upgrades.GetLevel(Upgrade.Brain)) * multiplier;
             timerText.text = "";
             rewards.alpha = 1;
             coinsReward.SetAmount(coins);
+            xpReward.SetAmount(xpPerAnswer);
             playButtonVisuals.gameObject.SetActive(true);
         }
         else
@@ -101,7 +105,7 @@ public class QuizCard : MonoBehaviour
         return secs + "s";
     }
 
-    private void Play()
+    public void Play()
     {
         QuizLauncher.Play(quiz); //Abre la escena del quiz
     }

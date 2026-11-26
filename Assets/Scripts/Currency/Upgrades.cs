@@ -38,10 +38,27 @@ public static class Upgrades
         return balance.GetMachineStrength(upgrade).Evaluate(level);
     }
 
+    //Nivel del personaje que hace falta para comprar el siguiente nivel de la mejora.
+    //Con 1 por nivel: el nivel 1 de la mejora pide nivel 1, el 2 nivel 2... Con 5: los niveles 1-5 piden nivel 1, los 6-10 nivel 2...
+    public static int GetRequiredCharacterLevel(Upgrade upgrade, ProgressionBalance balance)
+    {
+        int levelsPerCharacterLevel = GetCurrency(upgrade) == Currency.Strength
+            ? balance.strengthUpgradeLevelsPerCharacterLevel
+            : balance.machineUpgradeLevelsPerCharacterLevel;
+        return 1 + GetLevel(upgrade) / levelsPerCharacterLevel;
+    }
+
+    public static bool IsUnlocked(Upgrade upgrade, ProgressionBalance balance)
+    {
+        int characterLevel = balance.CharacterLevel(Currencies.Get(Currency.XP));
+        return characterLevel >= GetRequiredCharacterLevel(upgrade, balance);
+    }
+
     public static bool TryBuy(Upgrade upgrade, ProgressionBalance balance)
     {
         int price = GetPrice(upgrade, balance);
         Currency currency = GetCurrency(upgrade);
+        if (!IsUnlocked(upgrade, balance)) return false;
         if (Currencies.Get(currency) < price) return false;
 
         PlayerPrefs.SetInt(Key(upgrade), GetLevel(upgrade) + 1);
