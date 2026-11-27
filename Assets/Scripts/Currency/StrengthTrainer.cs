@@ -13,13 +13,16 @@ public class StrengthTrainer : MonoBehaviour
     [SerializeField] private Transform floatingStrengthParent;
 
     private const string LastSeenKey = "StrengthLastSeen";
+    private const long ResumeGapSeconds = 10;
 
     private float timer;
     private float strengthLeftover; //Los decimales de fuerza que aún no llegan a 1 (se suman el siguiente segundo)
+    private long lastTick; 
 
     private void Start()
     {
         GiveAfkStrength();
+        lastTick = Now();
     }
 
     private void Update()
@@ -28,7 +31,13 @@ public class StrengthTrainer : MonoBehaviour
         if (timer < 1f) return;
         timer -= 1f; //Una vez por segundo (y no cada frame, para no guardar en PlayerPrefs 60 veces por segundo)
 
-        PlayerPrefs.SetString(LastSeenKey, Now().ToString()); //Última vez que el gym estaba abierto (para el AFK)
+        //En la web (y en el móvil) cambiar de app o de pestaña congela el juego sin cerrarlo: al volver no se vuelve a
+        //cargar la escena, así que ese hueco se cuenta aquí como tiempo fuera
+        long now = Now();
+        if (now - lastTick > ResumeGapSeconds) GiveAfkStrength();
+        lastTick = now;
+
+        PlayerPrefs.SetString(LastSeenKey, now.ToString()); //Última vez que el gym estaba abierto (para el AFK)
 
         if (actionController.Current == TrainingAction.Resting) return;
 

@@ -24,8 +24,8 @@ public class AfkClaimPopup : MonoBehaviour
 
     public void Show(int strength, long secondsAway)
     {
-        pendingStrength = strength;
-        amountText.text = string.Format(amountFormat, NumberFormat.Short(strength));
+        pendingStrength += strength; //Si vuelve a salir sin reclamar, se acumula en vez de perderse
+        amountText.text = string.Format(amountFormat, NumberFormat.Short(pendingStrength));
         awayText.text = string.Format(awayFormat, NumberFormat.Duration(secondsAway));
         ActivateCanvas(true);
     }
