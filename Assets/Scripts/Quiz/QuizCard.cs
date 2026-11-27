@@ -19,12 +19,14 @@ public class QuizCard : MonoBehaviour
     [SerializeField] private Reward coinsReward; //Monedas que da el siguiente repaso
     [SerializeField] private Reward xpReward; //Inteligencia por cada pregunta acertada
     [SerializeField] private TMP_Text timerText;
+    [SerializeField] private GameObject[] notAvailable;
     
     [SerializeField] private Button playButton;
     [SerializeField] private GameObject playButtonVisuals;
     [SerializeField] private GameObject completedMark;
 
     private QuizData quiz;
+    public QuizData Quiz => quiz; //El test que enseña la tarjeta (lo usa el botón de recordatorio)
     private float timer;
 
     private void Awake()
@@ -84,25 +86,21 @@ public class QuizCard : MonoBehaviour
             coinsReward.SetAmount(coins);
             xpReward.SetAmount(xpPerAnswer);
             playButtonVisuals.gameObject.SetActive(true);
+            for (int i = 0; i < notAvailable.Length; i++)
+            {
+                notAvailable[i].SetActive(false);
+            }
         }
         else
         {
             rewards.alpha = 0;
             playButtonVisuals.gameObject.SetActive(false);
-            timerText.text = "Próximo repaso en " + FormatTime(seconds);
+            for (int i = 0; i < notAvailable.Length; i++)
+            {
+                notAvailable[i].SetActive(true);
+            }
+            timerText.text = NumberFormat.Duration(seconds);
         }
-    }
-
-    //3h 05m / 12m 30s / 45s
-    private string FormatTime(long seconds)
-    {
-        long hours = seconds / 3600;
-        long minutes = seconds / 60 % 60;
-        long secs = seconds % 60;
-
-        if (hours > 0) return hours + "h " + minutes.ToString("00") + "m";
-        if (minutes > 0) return minutes + "m " + secs.ToString("00") + "s";
-        return secs + "s";
     }
 
     public void Play()

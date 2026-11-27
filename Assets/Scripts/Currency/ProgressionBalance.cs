@@ -29,18 +29,18 @@ public class ProgressionBalance : ScriptableObject
     //Todas las máquinas suben de precio igual (x1.5). Cambia lo que cuesta entrar y cuánta fuerza suma cada mejora
     [Header("Máquinas del gym")]
     public GrowthCurve machineRunUpgradeCost = new GrowthCurve { baseValue = 20, growth = 1.5f };
-    public GrowthCurve machineRunStrength = new GrowthCurve { baseValue = 4, growth = 1.2f };
+    public GrowthCurve machineRunStrength = new GrowthCurve { baseValue = 0.6f, growth = 1.4f };
     public GrowthCurve machineCurlUpgradeCost = new GrowthCurve { baseValue = 60, growth = 1.5f };
-    public GrowthCurve machineCurlStrength = new GrowthCurve { baseValue = 5, growth = 1.3f };
+    public GrowthCurve machineCurlStrength = new GrowthCurve { baseValue = 0.75f, growth = 1.5f };
     public GrowthCurve machineBenchUpgradeCost = new GrowthCurve { baseValue = 150, growth = 1.5f };
-    public GrowthCurve machineBenchStrength = new GrowthCurve { baseValue = 6, growth = 1.4f };
+    public GrowthCurve machineBenchStrength = new GrowthCurve { baseValue = 0.9f, growth = 1.6f };
     public GrowthCurve machineLegUpgradeCost = new GrowthCurve { baseValue = 400, growth = 1.5f };
-    public GrowthCurve machineLegStrength = new GrowthCurve { baseValue = 8, growth = 1.5f };
+    public GrowthCurve machineLegStrength = new GrowthCurve { baseValue = 1.2f, growth = 1.7f };
 
     [Header("Ciclo de entrenamiento")]
     public float machineSeconds = 10; //Tiempo en cada máquina
     public float restSeconds = 5; //Descanso entre máquinas
-    public float maxAfkHours = 24; //Lo máximo que cuenta el tiempo fuera del juego
+    public float maxAfkHours = 8; //Lo máximo que da fuerza fuera del juego (el tiempo fuera se enseña entero)
 
     //Fuerza media por segundo de un ciclo
     public float AverageStrengthPerSecond()
@@ -48,7 +48,7 @@ public class ProgressionBalance : ScriptableObject
         float total = 0;
         foreach (Upgrade machine in new[] { Upgrade.Run, Upgrade.Curl, Upgrade.Bench, Upgrade.Leg })
         {
-            total += GetMachineStrength(machine).Evaluate(Upgrades.GetLevel(machine));
+            total += GetMachineStrength(machine).EvaluateExact(Upgrades.GetLevel(machine));
         }
 
         float averageMachine = total / 4;
@@ -103,6 +103,12 @@ public class GrowthCurve
 
     public int Evaluate(int level)
     {
-        return Mathf.RoundToInt(baseValue * Mathf.Pow(growth, level));
+        return Mathf.RoundToInt(EvaluateExact(level));
+    }
+
+    //El valor con decimales, sin redondear (la fuerza de las máquinas lo usa así: 4.8 por segundo)
+    public float EvaluateExact(int level)
+    {
+        return baseValue * Mathf.Pow(growth, level);
     }
 }

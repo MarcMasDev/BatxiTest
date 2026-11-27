@@ -6,9 +6,16 @@ public class StrengthTrainer : MonoBehaviour
     [SerializeField] private ActionController actionController;
     [SerializeField] private ProgressionBalance balance;
 
+    [SerializeField] private AfkClaimPopup claimPopup;
+    [SerializeField] private float minMinutesForPopup = 10; //Menos tiempo fuera (por ejemplo, volver de un test) se suma sin ventana
+
+    [SerializeField] private FloatingCurrency floatingStrength;
+    [SerializeField] private Transform floatingStrengthParent;
+
     private const string LastSeenKey = "StrengthLastSeen";
 
     private float timer;
+    private float strengthLeftover; //Los decimales de fuerza que aún no llegan a 1 (se suman el siguiente segundo)
 
     private void Start()
     {
@@ -26,11 +33,18 @@ public class StrengthTrainer : MonoBehaviour
         if (actionController.Current == TrainingAction.Resting) return;
 
         Upgrade machine = GetMachine(actionController.Current);
-        int strength = balance.GetMachineStrength(machine).Evaluate(Upgrades.GetLevel(machine));
+        //La máquina da fuerza con decimales (por ejemplo 4.8/s): se suma la parte entera y el resto se guarda
+        strengthLeftover += balance.GetMachineStrength(machine).EvaluateExact(Upgrades.GetLevel(machine));
+        int strength = (int)strengthLeftover;
+        if (strength == 0) return; //Con menos de 1 por segundo, algunos segundos aún no llega a 1: no se suma ni se enseña "+0"
+
+        strengthLeftover -= strength;
         Currencies.Add(Currency.Strength, strength);
+
+        if (floatingStrength != null) floatingStrength.Spawn(floatingStrengthParent, strength);
     }
 
-    //Al volver: segundos fuera * fuerza media por segundo
+
     private void GiveAfkStrength()
     {
         string lastSeen = PlayerPrefs.GetString(LastSeenKey, "");
@@ -44,14 +58,19 @@ public class StrengthTrainer : MonoBehaviour
             return;
         }
 
-        long seconds = Now() - long.Parse(lastSeen);
-        seconds = Math.Min(seconds, (long)(balance.maxAfkHours * 3600));
+        //El tiempo fuera de verdad se enseña entero, pero la fuerza solo cuenta hasta el máximo de horas:
+        //así volver tarde no se castiga y el máximo solo sirve para equilibrar la economía
+        long secondsAway = Now() - long.Parse(lastSeen);
+        long rewardedSeconds = Math.Min(secondsAway, (long)(balance.maxAfkHours * 3600));
 
-        int strength = (int)(seconds * balance.AverageStrengthPerSecond());
+        int strength = (int)(rewardedSeconds * balance.AverageStrengthPerSecond());
         if (strength <= 0) return; //Nada que dar (o el reloj del dispositivo ha ido hacia atrás)
 
-        Currencies.Add(Currency.Strength, strength);
-        Debug.Log("AFK: " + seconds + " s fuera, +" + strength + " fuerza");
+        Debug.Log("AFK: " + secondsAway + " s fuera (cuentan " + rewardedSeconds + "), +" + strength + " fuerza");
+
+        //Si ha estado un buen rato fuera, se reclama en la ventana. Si no, se suma directamente
+        if (secondsAway >= minMinutesForPopup * 60) claimPopup.Show(strength, secondsAway);
+        else Currencies.Add(Currency.Strength, strength);
     }
 
     //Segundos desde 1970 (UTC): un número que solo sube, fácil de guardar y restar

@@ -25,4 +25,16 @@ public static class NumberFormat
 
         return shown.ToString("#,0.##", Culture) + Suffixes[suffix];
     }
+
+    //Un tiempo en segundos: 3h 05m / 12m 30s / 45s
+    public static string Duration(long seconds)
+    {
+        long hours = seconds / 3600;
+        long minutes = seconds / 60 % 60;
+        long secs = seconds % 60;
+
+        if (hours > 0) return hours + "h " + minutes.ToString("00") + "m";
+        if (minutes > 0) return minutes + "m " + secs.ToString("00") + "s";
+        return secs + "s";
+    }
 }

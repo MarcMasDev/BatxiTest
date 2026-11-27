@@ -27,8 +27,9 @@ public class StrengthRateLabel : MonoBehaviour
 
     private void Refresh()
     {
+        //Siempre con 1 decimal: cada mejora de máquina sube la media poco, y sin decimales a veces no se notaría
         float rate = balance.AverageStrengthPerSecond();
-        string shown = rate < 10 ? rate.ToString("0.#", CultureInfo.InvariantCulture) : NumberFormat.Short(Mathf.RoundToInt(rate));
+        string shown = rate < 10000 ? rate.ToString("#,0.0", CultureInfo.InvariantCulture) : NumberFormat.Short(Mathf.RoundToInt(rate));
         rateText.text = "+" + shown + "/s";
     }
 }

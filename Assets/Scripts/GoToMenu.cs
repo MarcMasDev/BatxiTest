@@ -3,6 +3,9 @@ using UnityEngine.UI;
 
 public class GoToMenu : MonoBehaviour
 {
+    [Tooltip("Antes de volver, añade al calendario el aviso del siguiente repaso de este test.")]
+    [SerializeField] private bool notify;
+
     private void Start()
     {
         Button b = GetComponent<Button>();
@@ -10,6 +13,7 @@ public class GoToMenu : MonoBehaviour
     }
     public void LoadMenu()
     {
+        if (notify) Notifications.RemindNextRepetition(QuizLauncher.SelectedQuiz);
         QuizLauncher.ReturnToMenu();
     }
 }

@@ -1,3 +1,4 @@
+using System.Globalization;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -58,7 +59,11 @@ public class UpgradeButton : MonoBehaviour
 
         if (gainText != null)
         {
-            gainText.text = Upgrades.GetGain(upgrade, level, balance).ToString();
+            //Cada botón sabe su mejora: las máquinas (se pagan con monedas) dan fuerza con decimales, el resto enteros
+            bool isMachine = currency == Currency.Coins;
+            gainText.text = isMachine
+                ? "+" + balance.GetMachineStrength(upgrade).EvaluateExact(level).ToString("0.0", CultureInfo.InvariantCulture) + "/s"
+                : Upgrades.GetGain(upgrade, level, balance).ToString();
         }
 
         bool unlocked = Upgrades.IsUnlocked(upgrade, balance);

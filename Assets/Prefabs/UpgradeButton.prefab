@@ -1916,6 +1916,7 @@ MonoBehaviour:
   button: {fileID: 6154464538107987985}
   levelText: {fileID: 4730498815444405901}
   priceText: {fileID: 5007914340297789286}
+  gainText: {fileID: 1078165450960011694}
   upgradable:
   - {fileID: 5477776815878470728}
   - {fileID: 5477776814774832419}

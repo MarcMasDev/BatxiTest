@@ -44,6 +44,8 @@ public class QuizView : MonoBehaviour
     [SerializeField] private ProgressionBalance balance;
     [SerializeField] private Reward xpReward;
     [SerializeField] private Reward coinsReward;
+    [SerializeField] private FloatingCurrency floatingXp;
+    [SerializeField] private float yOffset = 80;
 
     [Tooltip("Se lanza al terminar el intento.")]
     [SerializeField] private UnityEvent onLevelCompleted;
@@ -137,6 +139,13 @@ public class QuizView : MonoBehaviour
             if (shownOrder[i] == question.correct) answer.ShowCorrect(correctColor, correct ? 0f : 0.35f); //Si has fallado, salta después del temblor para que la mires
             else if (shownOrder[i] == answerIndex) answer.ShowWrong(wrongColor);
             else answer.Dim();
+        }
+
+        //Al acertar, la inteligencia que suma sale de la respuesta
+        if (correct && floatingXp != null)
+        {
+            int xp = balance.brainPerAnswer.Evaluate(Upgrades.GetLevel(Upgrade.Brain)) * QuizProgress.GetRewardMultiplier(quiz, balance);
+            floatingXp.Spawn(answerButtons[shownOrder.IndexOf(answerIndex)].transform, xp, yOffset);
         }
 
         //El botón de Siguiente también lo dice
